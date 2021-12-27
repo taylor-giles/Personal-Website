@@ -1,0 +1,22 @@
+/* https://coolors.co/01161e-ef767a-49beaa-49dcb1-eeb868 */
+/* https://coolors.co/01161e-8f8389-45b69c-21d19f-f5e663 */
+/* https://coolors.co/01161e-23b5d3-75abbc-a2aebb-dfe0e2 */
+
+:root {
+    /* Main Palette Colors */
+    --primary-light: #f9e0d9ff;
+    --primary-dark: #01161eff;
+    --secondary-dark: #45525fff;
+    --secondary-light:  #dfe0e2ff;
+    --complement-light: #49dcb1ff;
+    --complement-dark: #2d728fff;
+    --accent: #eeb868ff;
+    --black: #000;
+
+    /* Other Colors */
+    --dark-gray: #1f1f1fff;
+
+    /* Gradients */
+    --complement-gradient: linear-gradient(45deg, var(--complement-dark), var(--complement-light), var(--complement-dark), var(--complement-light));
+}
+

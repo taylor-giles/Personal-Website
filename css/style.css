@@ -1,0 +1,30 @@
+/* Spacers & Containers */
+  .spacer{
+    flex: auto;
+  }
+  .vertical-divider{
+    background-color: var(--dark-gray);
+    width: 1px;
+    height: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+/* Cards */
+  .card {
+    box-shadow: 0 4px 8px 0 var(--black);
+    transition: 0.3s;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 var(--black);
+  }
+
+/* Animations */
+@keyframes moving-gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}

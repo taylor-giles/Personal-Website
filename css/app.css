@@ -1,0 +1,141 @@
+/* Body */
+  body {
+    max-width: 1500px;
+    margin: auto;
+    background-color: var(--primary-dark);
+  }
+
+  #root {
+    background-image: var(--complement-gradient);
+    background-size: 300% 100%;
+    width: 70%;
+    margin: auto;
+    animation: moving-gradient 30s infinite linear;
+    height: 5px;
+  }
+ 
+
+/* Banner & Tabs */
+  .banner {
+    height: 60px;
+    overflow: hidden;
+    background-color: var(--secondary-light);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 40%;
+    transition: opacity .25s ease-in-out;
+  }
+  .banner:hover{
+    opacity: 100%;
+  }
+  .banner-title {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px 16px;
+    transition: 0.3s;
+  }
+  .tab {
+    font-size: 12pt;
+    background-color: inherit;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    opacity: 50%;
+  }
+  .tab:hover {
+    background-color: var(--accent);
+    opacity: 100%;
+  }
+  .active {
+    background-color: var(--complement-light);
+  }
+
+
+/* Sections */
+  .section {
+    position: relative;
+    height: auto;
+    width: 80%;
+    margin: auto;
+
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: inherit;
+    color: var(--primary-light);
+  }
+
+  .section-header {
+    color: var(--accent)
+  }
+
+/* Gradient Dividers */
+  .gradient-divider {
+    background-image: var(--complement-gradient);
+    background-size: 300% 100%;
+    width: 70%;
+    margin: auto;
+    animation: moving-gradient 30s infinite linear;
+    height: 5px;
+  }
+  
+
+/* Intro (with corners) */
+  #intro {
+    position: relative;
+    height: auto;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    animation: intro-animate 1.25s ease;
+  }
+  #intro:before, #intro>:first-child:before {
+    position:absolute;
+    width:80px; height: 80px;
+    border-color:var(--complement-light);
+    border-style:solid;
+    content: ' ';
+  }
+  #intro:before {top:0;left:0;border-width: 10px 0 0 10px}
+  #intro>:first-child:before {bottom:0;right:0;border-width: 0 10px 10px 0}
+  @keyframes intro-animate {
+    0% {
+      transform: scaleX(0%);
+    }
+  }
+  #intro-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 48px;
+    width: 90%;
+    height: auto;
+  }
+
+
+/* About */
+  #about {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: inherit;
+  }
+
+
