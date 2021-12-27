@@ -1,29 +1,39 @@
 /* Body */
   body {
-    max-width: 1500px;
     margin: auto;
-    background-color: var(--primary-dark);
-  }
-
-  #root {
     background-image: var(--complement-gradient);
     background-size: 300% 100%;
-    width: 70%;
-    margin: auto;
     animation: moving-gradient 30s infinite linear;
     height: 5px;
+  }
+
+/* Content */
+  #content {
+    z-index: -1;
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 60px;
+    padding-top: 50px;
+    background-color: var(--primary-dark);
   }
  
 
 /* Banner & Tabs */
   .banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-width: 1000px;
+    margin: auto;
     height: 60px;
     overflow: hidden;
     background-color: var(--secondary-light);
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    opacity: 40%;
+    opacity: 80%;
     transition: opacity .25s ease-in-out;
   }
   .banner:hover{
@@ -55,38 +65,6 @@
   .active {
     background-color: var(--complement-light);
   }
-
-
-/* Sections */
-  .section {
-    position: relative;
-    height: auto;
-    width: 80%;
-    margin: auto;
-
-    margin-bottom: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    background-color: inherit;
-    color: var(--primary-light);
-  }
-
-  .section-header {
-    color: var(--accent)
-  }
-
-/* Gradient Dividers */
-  .gradient-divider {
-    background-image: var(--complement-gradient);
-    background-size: 300% 100%;
-    width: 70%;
-    margin: auto;
-    animation: moving-gradient 30s infinite linear;
-    height: 5px;
-  }
   
 
 /* Intro (with corners) */
@@ -94,7 +72,6 @@
     position: relative;
     height: auto;
     width: 60%;
-    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     display:flex;
@@ -115,7 +92,7 @@
   #intro>:first-child:before {bottom:0;right:0;border-width: 0 10px 10px 0}
   @keyframes intro-animate {
     0% {
-      transform: scaleX(0%);
+      transform: scale(0%);
     }
   }
   #intro-content {
@@ -136,6 +113,18 @@
     align-items: flex-start;
     flex-direction: column;
     background-color: inherit;
+  }
+  #about-content {
+    display: flex;
+  }
+
+/* Skills */
+  #skills {
+    margin-top: 50px;
+    background-image: url("../images/leather-tile.jpg");
+    background-size: 100%;
+    height: 1000px;
+    box-shadow: 0 0 40px 40px var(--primary-dark)inset;
   }
 
 

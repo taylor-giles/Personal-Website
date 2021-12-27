@@ -1,0 +1,61 @@
+/* Spacers & Containers */
+.spacer{
+  flex: auto;
+}
+.vertical-divider{
+  background-color: var(--dark-gray);
+  width: 1px;
+  height: 70%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 4px 8px 0 var(--black);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 var(--black);
+}
+
+/* Animations */
+@keyframes moving-gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Sections */
+.section {
+  position: relative;
+  height: auto;
+  width: 80%;
+  margin: auto;
+
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: inherit;
+  color: var(--primary-light);
+}
+
+.section-header {
+  color: var(--accent);
+}
+
+/* Gradient Dividers */
+.gradient-divider {
+  background-image: var(--complement-gradient);
+  background-size: 300% 100%;
+  width: 70%;
+  margin: auto;
+  animation: moving-gradient 30s infinite linear;
+  height: 5px;
+}
