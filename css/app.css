@@ -1,5 +1,6 @@
 /* Body */
   body {
+    font-family: "Montserrat", sans-serif;
     margin: auto;
     background-color: var(--primary-dark);
     height: 5px;
@@ -13,7 +14,7 @@
   #content {
     z-index: -1;
     position: absolute;
-    max-width: 1000px;
+    max-width: var(--max-width);
     margin: auto;
     margin-top: 60px;
     padding-top: 50px;
@@ -40,7 +41,7 @@
   }
   #banner-frame{
     background-color: inherit;
-    max-width: 1000px;
+    max-width: var(--max-width);
     margin: auto;
     height: 100%;
     overflow: hidden;
@@ -139,6 +140,7 @@
   #about-header {
     text-align: start;
     font-size: 24pt;
+    text-transform: none;
   }
 
 

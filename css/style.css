@@ -18,5 +18,8 @@
 
     /* Gradients */
     --complement-gradient: linear-gradient(45deg, var(--complement-dark), var(--complement-light), var(--complement-dark), var(--complement-light));
+
+    /* Sizing Values */
+    --max-width: 1250px;
 }
 

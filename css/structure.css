@@ -63,6 +63,16 @@
   color: var(--accent);
   font-size: 32pt;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.section-subtitle {
+  color: var(--primary-light);
+  font-size: 18pt;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 40px;
 }
 .section-divider {
   margin-top: 60px;
