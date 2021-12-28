@@ -14,14 +14,19 @@
   background-size: 300% 100%;
   width: 70%;
   margin: auto;
-  animation: moving-gradient 30s infinite linear;
+  animation: moving-gradient 20s infinite linear;
   height: 5px;
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
   justify-content:space-between;
   align-content: start;
+}
+.grid-container.col3 {
+  grid-template-columns: auto auto auto;
+}
+.grid-container.col2 {
+  grid-template-columns: 45% 45%;
 }
 
 /* Cards */
@@ -30,7 +35,8 @@
   transition: 0.3s;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 var(--black);
+  box-shadow: 0 10px 20px 0 var(--black);
+  transform: scale(1.05);
 }
 
 /* Animations */
@@ -42,6 +48,11 @@
     background-position: 100% 0;
   }
 }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 
 /* Sections */
 .section {

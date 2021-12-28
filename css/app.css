@@ -146,7 +146,6 @@
 
 /* Skills */
   #skills {
-    position: relative;
     /* background-image: url("../images/leather-tile.jpg"); */
     background-size: 100%;
     height: auto;
@@ -161,6 +160,10 @@
     font-size: 20pt;
     padding: 10px;
     margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
   .skill::before{
     background-image: url('/images/checkmark.png');
@@ -172,4 +175,45 @@
     content:"";
   }
 
+  /* Experience */
+  #experience {
+    height: auto;
+  }
+  #experience-container {
+    width: 100%;
+  }
+  .experience-item {
+    background-color: var(--secondary-dark);
+    height: auto;
+    font-size: 18pt;
+    padding: 20px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .exp-attribute {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 5px;
+  }
+  .exp-attribute::before{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: -20%;
+  }
+  .exp-title::before{
+    content: url('/images/work.svg');
+  }
+  .exp-time::before{
+    content: url('/images/date_range.svg');
+  }
+  .exp-employer::before{
+    content: url('/images/person.svg');
+  }
 
