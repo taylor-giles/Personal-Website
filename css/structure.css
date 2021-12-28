@@ -9,6 +9,20 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+.gradient-divider {
+  background-image: var(--complement-gradient);
+  background-size: 300% 100%;
+  width: 70%;
+  margin: auto;
+  animation: moving-gradient 30s infinite linear;
+  height: 5px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content:space-between;
+  align-content: start;
+}
 
 /* Cards */
 .card {
@@ -45,17 +59,12 @@
   background-color: inherit;
   color: var(--primary-light);
 }
-
 .section-header {
   color: var(--accent);
+  font-size: 32pt;
+  text-align: center;
 }
-
-/* Gradient Dividers */
-.gradient-divider {
-  background-image: var(--complement-gradient);
-  background-size: 300% 100%;
-  width: 70%;
-  margin: auto;
-  animation: moving-gradient 30s infinite linear;
-  height: 5px;
+.section-divider {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
