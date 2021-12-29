@@ -14,7 +14,7 @@
   background-size: 300% 100%;
   width: 70%;
   margin: auto;
-  animation: moving-gradient 20s infinite linear;
+  animation: moving-gradient 15s infinite linear;
   height: 5px;
 }
 .grid-container {
@@ -88,4 +88,26 @@
 .section-divider {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+/* Buttons */
+.redirect-button {
+  font-size: 14pt;
+  width: auto;
+  height: auto;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+  color: var(--primary-light);
+  transition: background-color .25s ease-in-out;
+  border-radius: 5px;
+  border-color: var(--accent);
+  margin-top: 25px;
+}
+.redirect-button:hover {
+  background-color: var(--accent);
+  color: var(--primary-dark);
+  transition: background-color color .25s ease-in-out;
+  /* transition: color .25s ease-in-out; */
 }

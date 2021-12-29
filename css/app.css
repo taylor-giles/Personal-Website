@@ -16,7 +16,7 @@
     position: absolute;
     max-width: var(--max-width);
     margin: auto;
-    margin-top: 60px;
+    margin-top: 100px;
     padding-top: 50px;
     background-color: var(--primary-dark);
   }
@@ -101,11 +101,11 @@
     animation: intro-animate 1.25s ease;
   }
   #intro:before, #intro>:first-child:before {
-    position:absolute;
-    width:80px; height: 80px;
+    position: absolute;
+    width: 80px; height: 80px;
     border-color:var(--complement-light);
-    border-style:solid;
-    content: ' ';
+    border-style: solid;
+    content: "";
   }
   #intro:before {top:0;left:0;border-width: 10px 0 0 10px}
   #intro>:first-child:before {bottom:0;right:0;border-width: 0 10px 10px 0}
@@ -132,9 +132,19 @@
     align-items: flex-start;
     flex-direction: column;
     background-color: inherit;
+    margin-top: 50px;
+  }
+  #about-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   #about-content {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     font-size: 14pt;
   }
   #about-header {
@@ -142,7 +152,13 @@
     font-size: 24pt;
     text-transform: none;
   }
-
+  #about-portrait {
+    width: 200px;
+    height: 250px;
+    margin-left: 50px;
+    background-color: var(--accent);
+  }
+f
 
 /* Skills */
   #skills {
@@ -185,7 +201,7 @@
   .experience-item {
     background-color: var(--secondary-dark);
     height: auto;
-    font-size: 18pt;
+    font-size: 14pt;
     padding: 20px;
     margin-top: 20px;
     opacity: 0;
@@ -205,7 +221,11 @@
   .exp-attribute::before{
     display: inline-block;
     margin-right: 10px;
-    vertical-align: -20%;
+    vertical-align: -30%;
+  }
+  .exp-title {
+    font-weight: bold;
+    font-size: 16pt;
   }
   .exp-title::before{
     content: url('/images/work.svg');
