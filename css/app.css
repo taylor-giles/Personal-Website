@@ -127,7 +127,7 @@
 
 
 /* About */
-  #about {
+  #about-section {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -158,10 +158,10 @@
     margin-left: 50px;
     background-color: var(--accent);
   }
-f
+
 
 /* Skills */
-  #skills {
+  #skills-section {
     /* background-image: url("../images/leather-tile.jpg"); */
     background-size: 100%;
     height: auto;
@@ -191,10 +191,8 @@ f
     content:"";
   }
 
+  
   /* Experience */
-  #experience {
-    height: auto;
-  }
   #experience-container {
     width: 100%;
   }
@@ -204,6 +202,8 @@ f
     font-size: 14pt;
     padding: 20px;
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     opacity: 0;
     animation: fadeIn ease-in 1;
     animation-duration: 1s;
@@ -237,3 +237,45 @@ f
     content: url('/images/person.svg');
   }
 
+
+  /* Projects */
+  #projects-container {
+    width: 100%;
+  }
+  .project-item {
+    background-color: var(--secondary-dark);
+    height: auto;
+    font-size: 12pt;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .project-title {
+    font-weight: bold;
+    font-size: 18pt;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 5px;
+  }
+  .project-image {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-left: 15px;
+  }
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }

@@ -5,10 +5,12 @@
  */
 const SKILLS_FILE = "../data/skills.json";
 const EXP_FILE = "../data/experiences.json";
+const PROJECTS_FILE = "../data/projects.json";
 
 window.onload = function() {
     loadSkills();
     loadExperience();
+    loadProjects();
 }
 
 var loadJSONFromFile = function(jsonFilePath, callback){
@@ -68,6 +70,47 @@ var loadExperience = function() {
 
             expContainer.appendChild(expCard);
             console.log(expCard);
+            index++;
+        }
+    });
+}
+
+var loadProjects = function() {
+    let projContainer = document.getElementById("projects-container");
+    loadJSONFromFile(PROJECTS_FILE, (projects) => {
+        let index = 0;
+        for(let proj of projects){
+            //Set up card
+            let projCard = document.createElement("div");
+            projCard.setAttribute("class", "project-item card");
+            projCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed grid animation
+
+            //Set up content container
+            let projContent = document.createElement("div");
+            projContent.setAttribute("class", "project-content");
+
+            //Title
+            let projTitle = document.createElement("div");
+            projTitle.setAttribute("class", "project-title");
+            projTitle.innerHTML = proj.title;
+            projContent.appendChild(projTitle);
+
+            //Description
+            let projDesc = document.createElement("div");
+            projDesc.setAttribute("class", "project-description");
+            projDesc.innerHTML = proj.description;
+            projContent.appendChild(projDesc);
+
+            //Image
+            let projImg = document.createElement("img");
+            projImg.setAttribute("class", "project-image");
+            projImg.setAttribute("src", proj.image);
+
+
+            projCard.appendChild(projContent);
+            projCard.appendChild(projImg);
+            projContainer.appendChild(projCard);
+            console.log(projCard);
             index++;
         }
     });
