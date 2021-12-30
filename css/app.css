@@ -204,7 +204,7 @@
   .experience-item {
     background-color: var(--secondary-dark);
     height: auto;
-    font-size: 14pt;
+    font-size: 13pt;
     padding: 20px;
     margin-top: 20px;
     margin-left: 10px;
@@ -219,9 +219,7 @@
     align-items: flex-start;
   }
   .exp-attribute {
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    padding: 5px;
   }
   .exp-attribute::before{
     display: inline-block;
@@ -231,6 +229,7 @@
   .exp-title {
     font-weight: bold;
     font-size: 16pt;
+    font-family: 'Courier New', Courier, monospace;
   }
   .exp-title::before{
     content: url('/images/work.svg');
