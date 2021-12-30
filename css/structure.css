@@ -10,11 +10,13 @@
   margin-right: 20px;
 }
 .gradient-divider {
-  background-image: var(--complement-gradient);
-  background-size: 300% 100%;
+  overflow: hidden;
+  background-image: var(--divider-gradient);
+  background-size: 150% 100%;
+  background-position: 50% 100%;
   width: 70%;
   margin: auto;
-  animation: moving-gradient 15s infinite linear;
+  animation: moving-gradient 60s infinite linear;
   height: 5px;
 }
 .grid-container {
@@ -41,13 +43,24 @@
 }
 
 /* Animations */
-@keyframes moving-gradient {
+@keyframes infinite-gradient {
   0% {
     background-position: 0 0;
   }
   100% {
     background-position: 100% 0;
   }
+}
+@keyframes moving-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 @keyframes fadeIn {
   from { opacity: 0; }

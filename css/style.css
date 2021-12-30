@@ -9,7 +9,6 @@
     --secondary-dark: #45525fff;
     --secondary-light:  #dfe0e2ff;
     --complement-light: #49dcb1ff;
-    --complement-mid: rgb(60, 156, 197);
     --complement-dark: #2d728fff;
     --accent: #eeb868ff;
     --black: #000;
@@ -18,9 +17,11 @@
     --dark-gray: #1f1f1fff;
 
     /* Gradients */
-    --complement-gradient: linear-gradient(45deg, var(--complement-dark), var(--complement-light), var(--complement-dark), var(--complement-light));
+    --divider-gradient: linear-gradient(90deg, 
+    var(--primary-dark),
+    var(--complement-dark), var(--complement-light),var(--complement-dark),
+    var(--primary-dark));
 
     /* Sizing Values */
     --max-width: 1250px;
 }
-
