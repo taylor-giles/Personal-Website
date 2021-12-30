@@ -33,6 +33,7 @@
 .card {
   box-shadow: 0 4px 8px 0 var(--black);
   transition: 0.3s;
+  border-radius: 3px;
 }
 .card:hover {
   box-shadow: 0 10px 20px 0 var(--black);
@@ -91,23 +92,34 @@
 }
 
 /* Buttons */
-.redirect-button {
+.button {
   font-size: 14pt;
   width: auto;
   height: auto;
   padding: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.button.redirect {
   background-color: transparent;
   color: var(--primary-light);
   transition: background-color .25s ease-in-out;
-  border-radius: 5px;
   border-color: var(--accent);
-  margin-top: 25px;
 }
-.redirect-button:hover {
+.button.redirect:hover {
   background-color: var(--accent);
   color: var(--primary-dark);
   transition: background-color color .25s ease-in-out;
   /* transition: color .25s ease-in-out; */
+}
+
+.button.submit {
+  font-size: 12pt;
+  margin-top: 15px;
+  background-color: var(--complement-dark);
+  border-color: var(--secondary-dark);
+  color: var(--primary-light);
 }

@@ -1,3 +1,8 @@
+/* HTML (whole document) */
+  html {
+    scroll-behavior: smooth;
+  }
+
 /* Body */
   body {
     font-family: "Montserrat", sans-serif;
@@ -58,7 +63,7 @@
     align-items: center;
     justify-content: flex-start;
   }
-  #banner-title {
+  #home-tab {
     background-color: inherit;
     border: none;
     outline: none;
@@ -321,7 +326,7 @@
     height: 260px;
   }
   #contact-portrait-frame {
-    background-color: var(--accent);
+    background-color: var(--complement-dark);
     border-radius: 10px;
     margin-left: 50px;
     padding: 10px;
@@ -334,5 +339,5 @@
     margin: auto;
     margin-top: 5px;
     font-size: 11pt;
-    color: var(--primary-dark)
+    color: var(--primary-light)
   }
