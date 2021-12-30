@@ -325,7 +325,7 @@
     height: 260px;
   }
   #contact-portrait-frame {
-    background-color: var(--complement-dark);
+    background-color: var(--secondary-dark);
     border-radius: 10px;
     margin-left: 50px;
     padding: 10px;
@@ -336,7 +336,7 @@
   }
   #contact-portrait-caption {
     margin: auto;
-    margin-top: 5px;
+    margin-top: 6px;
     font-size: 11pt;
     color: var(--primary-light)
   }

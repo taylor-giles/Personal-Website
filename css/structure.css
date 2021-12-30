@@ -138,3 +138,9 @@
   border-color: var(--secondary-dark);
   color: var(--primary-light);
 }
+.button.submit:hover {
+  background-color: var(--dark-gray);
+}
+.button.submit:active{
+  border: 2px solid var(--secondary-light);
+}

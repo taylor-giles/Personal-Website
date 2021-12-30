@@ -103,17 +103,18 @@
             <div id="contact-title">
               I'm always open to comments or questions about my work, my experience, or anything else! Feel free to send me a message, and be sure to leave your email so I can get back to you as soon as possible.
             </div>
+            <form action="contact.php" method="post">
+              <label class="contact-label" for="contact-name">Name</label>
+              <input type="text" class="contact-input" id="contact-name" name="contact-name"/>
+    
+              <label class="contact-label" for="contact-email">Email</label>
+              <input class="contact-input" id="contact-email" type="email" name="contact-email"/>
+    
+              <label class="contact-label" for="contact-msg">Message</label>
+              <textarea class="contact-input" id="contact-msg" name="contact-msg" required></textarea>
   
-            <label class="contact-label" for="contact-name">Name</label>
-            <input class="contact-input" id="contact-name" name="contact-name"/>
-  
-            <label class="contact-label" for="contact-email">Email</label>
-            <input class="contact-input" id="contact-email" type="email" name="contact-email"/>
-  
-            <label class="contact-label" for="contact-msg">Message</label>
-            <textarea class="contact-input" id="contact-msg" name="contact-msg"></textarea>
-
-            <button id="contact-submit-button" class="button submit">Send Message</button>
+              <button type="submit" id="contact-submit-button" class="button submit">Send Message</button>
+            </form>
           </div>
           <div id="contact-portrait-frame">
             <img id="contact-portrait" src="images/sample-portrait.jpg"/>
