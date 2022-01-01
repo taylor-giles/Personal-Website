@@ -1,3 +1,5 @@
+import { attachSubmitListener } from "./contact.js";
+
 /**
  * Taylor Giles Personal Website
  * 
@@ -12,6 +14,7 @@ window.onload = function() {
     loadExperience();
     loadProjects();
     assignButtonCallbacks();
+    attachSubmitListener();
 }
 
 var loadJSONFromFile = function(jsonFilePath, callback){
@@ -35,7 +38,6 @@ var loadSkills = function() {
             skillCard.setAttribute("class", "skill");
             skillCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed grid animation
             skillsContainer.appendChild(skillCard);
-            console.log(skillCard);
             index++;
         }
     });
@@ -70,7 +72,6 @@ var loadExperience = function() {
             expCard.appendChild(expTime);
 
             expContainer.appendChild(expCard);
-            console.log(expCard);
             index++;
         }
     });
@@ -111,7 +112,6 @@ var loadProjects = function() {
             projCard.appendChild(projContent);
             projCard.appendChild(projImg);
             projContainer.appendChild(projCard);
-            console.log(projCard);
             index++;
         }
     });
