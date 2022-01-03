@@ -1,11 +1,12 @@
 /**
  * Taylor Giles Personal Website
  * 
- * The scripts in this file are used to dynamically populate aspects of the website
+ * The scripts in this file are used to dynamically populate the home page
  */
-const SKILLS_FILE = "../data/skills.json";
-const EXP_FILE = "../data/experiences.json";
-const PROJECTS_FILE = "../data/projects.json";
+import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE } from "/src/constants.js";
+ const NUM_SKILLS_TO_SHOW = 9;
+ const NUM_EXP_TO_SHOW = 4;
+ const NUM_PROJECTS_TO_SHOW = 4;
 
 window.onload = function() {
     loadSkills();
@@ -34,8 +35,9 @@ var loadSkills = function() {
             skillCard.setAttribute("class", "skill");
             skillCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed grid animation
             skillsContainer.appendChild(skillCard);
-            console.log(skillCard);
             index++;
+
+            if(index > NUM_SKILLS_TO_SHOW) { break; }
         }
     });
 }
@@ -69,8 +71,9 @@ var loadExperience = function() {
             expCard.appendChild(expTime);
 
             expContainer.appendChild(expCard);
-            console.log(expCard);
             index++;
+
+            if(index > NUM_EXP_TO_SHOW) { break; }
         }
     });
 }
@@ -110,8 +113,9 @@ var loadProjects = function() {
             projCard.appendChild(projContent);
             projCard.appendChild(projImg);
             projContainer.appendChild(projCard);
-            console.log(projCard);
             index++;
+
+            if(index > NUM_PROJECTS_TO_SHOW) { break; }
         }
     });
 }
