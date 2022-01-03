@@ -142,7 +142,7 @@
   background-color: var(--dark-gray);
 }
 .button.submit:active{
-  border: 2px solid var(--secondary-light);
+  border: 2px solid var(--white);
 }
 
 
@@ -186,7 +186,7 @@ body {
   margin: auto;
   height: 60px;
   overflow: hidden;
-  background-color: var(--secondary-light);
+  background-color: var(--white);
   opacity: 80%;
   transition: opacity .25s ease-in-out;
 }

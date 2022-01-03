@@ -3,7 +3,7 @@
  * 
  * The scripts in this file are used to dynamically populate the home page
  */
-import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE } from "/src/constants.js";
+import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE, loadJSONFromFile } from "/src/constants.js";
  const NUM_SKILLS_TO_SHOW = 9;
  const NUM_EXP_TO_SHOW = 4;
  const NUM_PROJECTS_TO_SHOW = 4;
@@ -14,17 +14,6 @@ window.onload = function() {
     loadProjects();
 }
 
-var loadJSONFromFile = function(jsonFilePath, callback){
-    let xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            callback(JSON.parse(this.responseText));
-        }
-    };
-    xmlhttp.open("GET", jsonFilePath, true);
-    xmlhttp.send();
-}
-
 var loadSkills = function() {
     let skillsContainer = document.getElementById("skills-container");
     loadJSONFromFile(SKILLS_FILE, (skills) => {
@@ -33,7 +22,7 @@ var loadSkills = function() {
             let skillCard = document.createElement("div");
             skillCard.innerHTML = skill.name;
             skillCard.setAttribute("class", "skill");
-            skillCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed grid animation
+            skillCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed fade animation
             skillsContainer.appendChild(skillCard);
             index++;
 
@@ -50,7 +39,7 @@ var loadExperience = function() {
             //Set up card
             let expCard = document.createElement("div");
             expCard.setAttribute("class", "experience-item card");
-            expCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed grid animation
+            expCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed fade animation
 
             //Title
             let expTitle = document.createElement("div");
@@ -86,7 +75,7 @@ var loadProjects = function() {
             //Set up card
             let projCard = document.createElement("div");
             projCard.setAttribute("class", "project-item card");
-            projCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed grid animation
+            projCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed fade animation
 
             //Set up content container
             let projContent = document.createElement("div");

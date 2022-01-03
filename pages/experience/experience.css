@@ -1,0 +1,38 @@
+/* Banner */
+#banner {
+    opacity: 100%;
+}
+
+/* Items */
+.experience-item {
+    background-color: var(--secondary-light);
+    height: auto;
+    font-size: 13pt;
+    padding: 20px;
+    margin-top: 20px;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    animation: fadeIn ease-in 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .exp-title {
+    font-weight: bold;
+    font-size: 16pt;
+  }
+  .exp-title::before{
+    content: url('/images/icons/work.svg');
+  }
+  .exp-time{
+    font-size: 16pt;
+  }
+  .exp-employer::before{
+    content: url('/images/icons/person.svg');
+  }
+  .exp-location::before{
+      content: url('/images/icons/location.svg');
+  }

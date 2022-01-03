@@ -7,11 +7,12 @@
     --primary-light: #f9e0d9ff;
     --primary-dark: #01161eff;
     --secondary-dark: #45525fff;
-    --secondary-light:  #dfe0e2ff;
+    --secondary-light:  rgb(115, 137, 158);
     --complement-light: #49dcb1ff;
     --complement-dark: #2d728fff;
     --accent: #eeb868ff;
     --black: #000;
+    --white: #dfe0e2ff;
 
     /* Other Colors */
     --dark-gray: #1f1f1fff;

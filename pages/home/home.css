@@ -139,13 +139,13 @@
     font-family: 'Courier New', Courier, monospace;
   }
   .exp-title::before{
-    content: url('/images/work.svg');
+    content: url('/images/icons/work.svg');
   }
   .exp-time::before{
-    content: url('/images/date_range.svg');
+    content: url('/images/icons/date_range.svg');
   }
   .exp-employer::before{
-    content: url('/images/person.svg');
+    content: url('/images/icons/person.svg');
   }
 
 
