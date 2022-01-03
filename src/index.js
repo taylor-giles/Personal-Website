@@ -11,7 +11,6 @@ window.onload = function() {
     loadSkills();
     loadExperience();
     loadProjects();
-    assignButtonCallbacks();
 }
 
 var loadJSONFromFile = function(jsonFilePath, callback){
@@ -115,35 +114,4 @@ var loadProjects = function() {
             index++;
         }
     });
-}
-
-/**
- * Button Callbacks
- */
-function navigateToIntro(){
-    location.hash = "home";
-}
-function navigateToSkills(){
-    location.hash="skills";
-}
-function navigateToExperience(){
-    location.hash="experience";
-}
-function navigateToProjects(){
-    location.hash="projects";
-}
-function navigateToContact(){
-    location.hash = "contact";
-}
-
-function assignButtonCallbacks(){
-    //Banner tabs
-    document.getElementById("home-tab").onclick = navigateToIntro;
-    document.getElementById("skills-tab").onclick = navigateToSkills;
-    document.getElementById("experience-tab").onclick = navigateToExperience;
-    document.getElementById("projects-tab").onclick = navigateToProjects;
-    document.getElementById("contact-tab").onclick = navigateToContact;
-
-    //Buttons
-    document.getElementById("contact-button").onclick = navigateToContact;
 }

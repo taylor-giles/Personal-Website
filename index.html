@@ -15,12 +15,12 @@
     <div id="banner">
       <div id="banner-frame">
         <div id="banner-content">
-          <div id="home-tab">Taylor Giles</div>
+          <div id="home-tab" onclick="location.hash='home';">Taylor Giles</div>
           <div class="vertical-divider"></div>
-          <button id="skills-tab" class="tab">Skills</button>
-          <button id="experience-tab" class="tab">Experience</button>
-          <button id="projects-tab" class="tab">Projects</button>
-          <button id="contact-tab" class="tab">Contact</button>
+          <button id="skills-tab" class="tab" onclick="location.hash='skills';">Skills</button>
+          <button id="experience-tab" class="tab" onclick="location.hash='experience';">Experience</button>
+          <button id="projects-tab" class="tab" onclick="location.hash='projects';">Projects</button>
+          <button id="contact-tab" class="tab" onclick="location.hash='contact';">Contact</button>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
             <div id="about-text">
               Hi! I'm Taylor. I'm a computer science major, a bassist, and an innovator. I have a passion for building new things and improving upon old ones, so I'm always ready for fresh new ideas.
             </div>
-            <button id="contact-button" class="button redirect">
+            <button id="contact-button" class="button redirect" onclick="location.hash='contact';"> 
               Say Hi!
             </button>
           </div>
