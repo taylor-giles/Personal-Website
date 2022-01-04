@@ -62,10 +62,16 @@
 		background-position: 0% 50%;
 	}
 }
-@keyframes fadeIn {
+@keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+@keyframes grow {
+  0% {
+    transform: scale(0%);
+  }
+}
+
 
 
 /* Sections */

@@ -10,7 +10,7 @@
     align-items: center;
     background-color: var(--primary-dark);
     color: var(--primary-light);
-    animation: intro-animate 1.25s ease;
+    animation: grow 1.25s ease;
   }
   #intro:before, #intro>:first-child:before {
     position: absolute;
@@ -21,11 +21,6 @@
   }
   #intro:before {top:0;left:0;border-width: 10px 0 0 10px}
   #intro>:first-child:before {bottom:0;right:0;border-width: 0 10px 10px 0}
-  @keyframes intro-animate {
-    0% {
-      transform: scale(0%);
-    }
-  }
   #intro-content {
     display: flex;
     justify-content: center;
@@ -89,7 +84,7 @@
     padding: 10px;
     margin-top: 20px;
     opacity: 0;
-    animation: fadeIn ease-in 1;
+    animation: fade-in ease-in 1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
@@ -117,7 +112,7 @@
     margin-left: 10px;
     margin-right: 10px;
     opacity: 0;
-    animation: fadeIn ease-in 1;
+    animation: fade-in ease-in 1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     display: flex;
@@ -162,7 +157,7 @@
     margin-left: 10px;
     margin-right: 10px;
     opacity: 0;
-    animation: fadeIn ease-in 1;
+    animation: fade-in ease-in 1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     display: flex;
@@ -217,7 +212,7 @@
     display: block;
     width: 100%;
     height: 20px;
-    background-color: var(--secondary-light);
+    background-color: var(--white);
     border-color: transparent;
     border-radius: 2px;
   }

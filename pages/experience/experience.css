@@ -15,7 +15,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    animation: fadeIn ease-in 1;
+    animation: fade-in ease-in 1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
