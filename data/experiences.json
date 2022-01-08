@@ -5,7 +5,8 @@
         "employer": "Campus Residences IT",
         "time": "Nov. 2019 - Present",
         "description": "Coordinate IT team's efforts to address technical issues at print stations across campus.",
-        "skills": ["Leadership", "Organization", "Customer Service", "Problem Solving"]
+        "skills": ["Leadership", "Organization", "Customer Service", "Problem Solving"],
+        "image": "/images/sbu-campres.png"
     },
     { 
         "title": "Teaching Assistant",
@@ -13,15 +14,17 @@
         "employer": "Systems Fundamentals",
         "time": "Aug. 2021 - Dec. 2021",
         "description": "Assisted students learning MIPS assembly by hosting one-on-one office hours and creating/proctoring tests and quizzes.",
-        "skills": ["Assembly", "MIPS", "Problem Solving", "Teaching", "Organization"]
+        "skills": ["Assembly", "MIPS", "Problem Solving", "Teaching", "Organization"],
+        "image": "/images/sbu-logo.png"
     },
     { 
         "title": "Contracted Developer",
         "location": "Remote",
-        "employer": "Launchpad",
+        "employer": "LaunchPad",
         "time": "Sep. 2020 - Jan. 2021",
         "description": "Contracted by an advertising analytics startup to overhaul and enhance the product's UI.",
-        "skills": ["Organization", "Legacy Codebase", "Problem Solving", "Javascript", "HTML/CSS"]
+        "skills": ["Organization", "Legacy Codebase", "Problem Solving", "Javascript", "HTML/CSS"],
+        "image": "/images/launchpad-logo.png"
     },
     { 
         "title": "Private Tutor",

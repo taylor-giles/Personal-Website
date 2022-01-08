@@ -6,6 +6,7 @@
 #experience-container{
   width: 100%;
   height: auto;
+  margin-top: 40px;
 }
 
 /* Items */
@@ -36,6 +37,11 @@
     height: auto;
     margin-left: 0px;
   }
+  .exp-sidebar {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+  }
   .exp-attribute::before{
     display: inline-block;
     margin-right: 10px;
@@ -50,7 +56,6 @@
   }
   .exp-time{
     font-size: 14pt;
-    width: 280px;
   }
   .exp-employer::before{
     content: url('/images/icons/work.svg');
@@ -66,4 +71,9 @@
   .exp-description::before{
     content: "Description:";
     font-weight: 600;
+  }
+  .exp-image {
+    max-width: 100%;
+    padding: 40px;
+    padding-left: 20px;
   }

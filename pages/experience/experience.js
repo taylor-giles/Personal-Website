@@ -24,15 +24,30 @@ var loadExperience = function() {
             
             expCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed fade animation
 
+            //Container for time and img
+            let expSidebar = document.createElement("div");
+            expSidebar.setAttribute("class", "exp-sidebar");
+
             //Time
             let expTime = document.createElement("div");
             expTime.setAttribute("class", "exp-attribute exp-time");
             expTime.innerHTML = exp.time;
-            expCard.appendChild(expTime);
+            expSidebar.appendChild(expTime);
+
+            //Image
+            if(exp.image){
+                let expImg = document.createElement("img");
+                expImg.setAttribute("class", "exp-image");
+                expImg.setAttribute("src", exp.image);
+                expSidebar.appendChild(expImg);
+            }
+
 
             //Container for other elements
             let expContent = document.createElement("div");
             expContent.setAttribute("class", "exp-content");
+
+            expCard.appendChild(expSidebar);
 
             //Vertical divider
             let vDivider = document.createElement("div");
