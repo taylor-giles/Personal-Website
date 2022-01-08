@@ -65,7 +65,16 @@
     margin-left: 50px;
     background-color: var(--accent);
   }
-
+  #about-button {
+    margin-top: 25px;
+    background-color: transparent;
+    border: 2px solid var(--accent);
+  }
+  #about-button:hover {
+    background-color: var(--accent);
+    color: var(--primary-dark);
+    transition: background-color color .25s ease-in-out;
+  }
 
 /* Skills */
   #skills-section {
@@ -134,13 +143,13 @@
     font-family: 'Courier New', Courier, monospace;
   }
   .exp-title::before{
-    content: url('/images/icons/work.svg');
+    content: url('/images/icons/person.svg');
   }
   .exp-time::before{
     content: url('/images/icons/date_range.svg');
   }
   .exp-employer::before{
-    content: url('/images/icons/person.svg');
+    content: url('/images/icons/work.svg');
   }
 
 

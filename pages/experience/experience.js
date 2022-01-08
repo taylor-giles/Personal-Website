@@ -16,7 +16,12 @@ var loadExperience = function() {
         for(let exp of exps){
             //Set up card
             let expCard = document.createElement("div");
-            expCard.setAttribute("class", "experience-item");
+            if(index % 2 == 0){
+                expCard.setAttribute("class", "experience-item light");
+            } else {
+                expCard.setAttribute("class", "experience-item light");
+            }
+            
             expCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed fade animation
 
             //Time
@@ -31,7 +36,7 @@ var loadExperience = function() {
 
             //Vertical divider
             let vDivider = document.createElement("div");
-            vDivider.setAttribute("class", "vertical-divider");
+            vDivider.setAttribute("class", "vertical-divider exp-content-divider");
             expCard.appendChild(vDivider);
 
             //Title
@@ -51,6 +56,12 @@ var loadExperience = function() {
             expLocation.setAttribute("class", "exp-attribute exp-location");
             expLocation.innerHTML = exp.location;
             expContent.appendChild(expLocation);
+
+            //Description
+            let expDescription = document.createElement("div");
+            expDescription.setAttribute("class", "exp-attribute exp-description");
+            expDescription.innerHTML = exp.description;
+            expContent.appendChild(expDescription);
 
             expCard.appendChild(expContent);
             expContainer.appendChild(expCard);

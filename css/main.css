@@ -124,16 +124,16 @@
 }
 
 .button.redirect {
-  background-color: transparent;
+  margin-top: 50px;
+  background-color: var(--secondary-dark);
+  border: 2px solid var(--black);
   color: var(--primary-light);
   transition: background-color .25s ease-in-out;
-  border-color: var(--accent);
 }
 .button.redirect:hover {
   background-color: var(--accent);
   color: var(--primary-dark);
   transition: background-color color .25s ease-in-out;
-  /* transition: color .25s ease-in-out; */
 }
 
 .button.submit {

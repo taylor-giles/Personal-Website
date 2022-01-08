@@ -18,7 +18,7 @@
           <div id="home-tab" onclick="location.hash='home';">Taylor Giles</div>
           <div class="vertical-divider"></div>
           <button id="skills-tab" class="tab" onclick="location.hash='skills';">Skills</button>
-          <button id="experience-tab" class="tab" onclick="location.hash='experience';">Experience</button>
+          <button id="experience-tab" class="tab" onclick="location.href='/pages/experience';">Experience</button>
           <button id="projects-tab" class="tab" onclick="location.hash='projects';">Projects</button>
           <button id="contact-tab" class="tab" onclick="location.hash='contact';">Contact</button>
         </div>
@@ -44,7 +44,7 @@
             <div id="about-text">
               Hi! I'm Taylor. I'm a computer science major, a bassist, and an innovator. I have a passion for building new things and improving upon old ones, so I'm always ready for fresh new ideas.
             </div>
-            <button id="contact-button" class="button redirect" onclick="location.hash='contact';"> 
+            <button id="about-button" class="button redirect" onclick="location.hash='contact';"> 
               Say Hi!
             </button>
           </div>
@@ -72,9 +72,11 @@
       <!-- Experience -->
       <div id="experience-section" class="section">
         <h1 class="section-header">Experience</h1>
+        <div class="section-subtitle">An overview of my work & technical experience</div>
         <div id="experience-container" class="grid-container col2">
           <!-- NOTE: This is populated by JS script -->
         </div>
+        <button class="button redirect section-button" onclick="location.href='/pages/experience';">More Details</button>
       </div>
 
       <!-- Divider -->

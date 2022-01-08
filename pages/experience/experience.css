@@ -13,36 +13,57 @@
     background-color: var(--secondary-light);
     color: var(--primary-dark);
     height: auto;
-    font-size: 13pt;
+    font-size: 12pt;
+    margin-top: 2px;
     padding: 20px;
     opacity: 0;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
     animation: fade-in ease-in 1;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+  }
+  .experience-item.dark {
+    background-color: var(--secondary-dark);
+  }
+  .experience-item.light {
+    background-color: var(--secondary-light);
+  }
+  .exp-content {
+    width: 100%;
+  }
+  .exp-content-divider {
+    height: auto;
+    margin-left: 0px;
   }
   .exp-attribute::before{
     display: inline-block;
     margin-right: 10px;
-    vertical-align: -30%;
+    vertical-align: -25%;
   }
   .exp-title {
     font-weight: bold;
-    font-size: 16pt;
+    font-size: 14pt;
   }
   .exp-title::before{
-    content: url('/images/icons/work.svg');
-  }
-  .exp-time{
-    font-size: 16pt;
-    width: 250px;
-  }
-  .exp-employer::before{
     content: url('/images/icons/person.svg');
   }
+  .exp-time{
+    font-size: 14pt;
+    width: 280px;
+  }
+  .exp-employer::before{
+    content: url('/images/icons/work.svg');
+  }
   .exp-location::before{
-      content: url('/images/icons/location.svg');
+    content: url('/images/icons/location.svg');
+  }
+  .exp-description {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .exp-description::before{
+    content: "Description:";
+    font-weight: 600;
   }
