@@ -11,8 +11,8 @@
     //Refresh the hash (wait for everything to load before scrolling)
     let givenHash = location.hash;
     if(givenHash){
-        history.replaceState(undefined, undefined, ""); //Remove hash without adding to history
-        setTimeout(function() { location.hash = givenHash }, 25); //Add hash back in to cause autoscroll
+        location.replace("#"); //Remove hash without adding to history
+        setTimeout(function() { location.replace(givenHash) }, 100); //Add hash back in to cause autoscroll
     }
 }
 
@@ -23,11 +23,7 @@ var loadExperience = function() {
         for(let exp of exps){
             //Set up card
             let expCard = document.createElement("div");
-            if(index % 2 == 0){
-                expCard.setAttribute("class", "experience-item light");
-            } else {
-                expCard.setAttribute("class", "experience-item light");
-            }
+            expCard.setAttribute("class", "experience-item light");
             
             expCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed fade animation
 
