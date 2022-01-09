@@ -1,37 +1,61 @@
 [
-    { 
+    {
+        "id": "crit",
         "title": "Team Coordinator",
         "location": "Stony Brook University",
         "employer": "Campus Residences IT",
         "time": "Nov. 2019 - Present",
-        "description": "Coordinate IT team's efforts to address technical issues at print stations across campus.",
-        "skills": ["Leadership", "Organization", "Customer Service", "Problem Solving"],
+        "description": "I direct a team of approximately 20 student technicians whose goal is to ensure that all printing/technology stations located around the campus are working smoothly and efficiently. This \"Print Team\" is a subset of the larger Campus Residences IT group - I coordinate the efforts of the Print Team with all other groups within C.R.I.T. to maximize effectiveness and efficiency.",
+        "skills": [
+            "Leadership",
+            "Organization",
+            "Customer Service",
+            "Problem Solving"
+        ],
         "image": "/images/sbu-campres.png"
     },
-    { 
+    {
+        "id": "ta",
         "title": "Teaching Assistant",
         "location": "Stony Brook University",
         "employer": "Systems Fundamentals",
         "time": "Aug. 2021 - Dec. 2021",
-        "description": "Assisted students learning MIPS assembly by hosting one-on-one office hours and creating/proctoring tests and quizzes.",
-        "skills": ["Assembly", "MIPS", "Problem Solving", "Teaching", "Organization"],
+        "description": "As a TA, I assisted students in SBU's \"Systems Fundamentals I\" course, which teaches MIPS assembly, Boolean algebra, and the basics of CPU engineering. I held one-on-one office hours (3 hrs/week) to answer student questions, and assisted the professor by creating and proctoring various quizzes and exams.",
+        "skills": [
+            "Assembly",
+            "MIPS",
+            "Teaching",
+            "Organization"
+        ],
         "image": "/images/sbu-logo.png"
     },
-    { 
+    {
+        "id": "launchpad",
         "title": "Contracted Developer",
         "location": "Remote",
         "employer": "LaunchPad",
         "time": "Sep. 2020 - Jan. 2021",
-        "description": "Contracted by an advertising analytics startup to overhaul and enhance the product's UI.",
-        "skills": ["Organization", "Legacy Codebase", "Problem Solving", "Javascript", "HTML/CSS"],
+        "description": "I was contracted by LaunchPad, an advertizing analytics startup company, to completely overhaul their product's web app. I was able to analyze their existing codebase and remove a considerable number of redundancies, while implementing a more modular and feature-rich API.",
+        "skills": [
+            "Organization",
+            "Legacy Codebase",
+            "Problem Solving",
+            "Javascript",
+            "HTML/CSS"
+        ],
         "image": "/images/launchpad-logo.png"
     },
-    { 
+    {
+        "id": "tutor",
         "title": "Private Tutor",
         "location": "Long Island",
         "employer": "High School & College Students",
         "time": "May 2016 - Present",
-        "description": "Assist students studying various subjects, primarily in STEM-related fields.",
-        "skills": ["Teaching", "Problem Solving", "Organization"]
+        "description": "For several years, I have been tutoring students in grades ranging from 2-12 as well as college students. Most frequently I help with mathematics (algebra, geometry, etc.) though I have also assisted with computer science, physical sciences, and developing skills necessary for essay writing and test taking.",
+        "skills": [
+            "Teaching",
+            "Problem Solving",
+            "Organization"
+        ]
     }
 ]

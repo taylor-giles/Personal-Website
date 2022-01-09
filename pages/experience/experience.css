@@ -6,7 +6,7 @@
 #experience-container{
   width: 100%;
   height: auto;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 /* Items */
@@ -15,14 +15,14 @@
     color: var(--primary-dark);
     height: auto;
     font-size: 12pt;
-    margin-top: 2px;
+    margin-top: 25px;
     padding: 20px;
-    opacity: 0;
+    /* opacity: 0; */
     display: flex;
     flex-direction: row;
-    animation: fade-in ease-in 1;
+    /* animation: fade-in ease-in 1;
     animation-duration: 1s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;  */
   }
   .experience-item.dark {
     background-color: var(--secondary-dark);
@@ -64,16 +64,23 @@
     content: url('/images/icons/location.svg');
   }
   .exp-description {
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
   }
   .exp-description::before{
     content: "Description:";
     font-weight: 600;
+    margin-bottom: 5px;
   }
   .exp-image {
     max-width: 100%;
     padding: 40px;
     padding-left: 20px;
+  }
+  .exp-anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
   }

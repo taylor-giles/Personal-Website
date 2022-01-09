@@ -59,6 +59,11 @@ var loadExperience = function() {
             expTime.innerHTML = exp.time;
             expCard.appendChild(expTime);
 
+            //Redirect on click
+            expCard.onclick = () => {
+                location.href = "/pages/experience/#" + exp.id;
+            };
+
             expContainer.appendChild(expCard);
             index++;
 

@@ -7,6 +7,13 @@
 
  window.onload = function() {
     loadExperience();
+
+    //Refresh the hash (wait for everything to load before scrolling)
+    let givenHash = location.hash;
+    if(givenHash){
+        history.replaceState(undefined, undefined, ""); //Remove hash without adding to history
+        setTimeout(function() { location.hash = givenHash }, 25); //Add hash back in to cause autoscroll
+    }
 }
 
 var loadExperience = function() {
@@ -23,6 +30,12 @@ var loadExperience = function() {
             }
             
             expCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed fade animation
+
+            //Anchor
+            let expAnchor = document.createElement("a");
+            expAnchor.setAttribute("name", exp.id);
+            expAnchor.setAttribute("class", "exp-anchor");
+            expCard.appendChild(expAnchor);
 
             //Container for time and img
             let expSidebar = document.createElement("div");
