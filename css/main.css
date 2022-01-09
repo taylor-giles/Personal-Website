@@ -118,8 +118,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
-  margin-top: 25px;
-  border: 2px solid var(--accent);
 }
 
 .button.redirect {
@@ -139,7 +137,7 @@
   font-size: 12pt;
   margin-top: 15px;
   background-color: var(--complement-dark);
-  border-color: var(--secondary-dark);
+  border: 2px solid var(--secondary-dark);
   color: var(--primary-light);
 }
 .button.submit:hover {
@@ -149,6 +147,20 @@
   border: 2px solid var(--white);
 }
 
+.button.pill {
+  font-size: 10pt;
+  border-radius: 20px;
+  padding: 3px;
+  padding-inline-end: 10px;
+  padding-inline-start: 10px;
+  background-color: transparent;
+  border-color: var(--dark-gray);
+  margin-right: 10px;
+}
+.button.pill:hover {
+  background-color: var(--dark-gray);
+  color: var(--primary-light);
+}
 
 
 /* HTML (whole document) */

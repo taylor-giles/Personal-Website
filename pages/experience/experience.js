@@ -87,6 +87,19 @@ var loadExperience = function() {
             expDescription.innerHTML = exp.description;
             expContent.appendChild(expDescription);
 
+            //Container for skills pills
+            let expSkills = document.createElement("div");
+            expSkills.setAttribute("class", "exp-skills-container");
+
+            //Skills pills
+            for(let skill of exp.skills){
+                let expSkill = document.createElement("button");
+                expSkill.setAttribute("class", "button pill");
+                expSkill.innerHTML = skill;
+                expSkills.appendChild(expSkill);
+            }
+            expContent.appendChild(expSkills);
+
             expCard.appendChild(expContent);
             expContainer.appendChild(expCard);
             index++;
