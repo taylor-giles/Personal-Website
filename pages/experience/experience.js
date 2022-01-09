@@ -30,7 +30,7 @@ var loadExperience = function() {
             //Anchor
             let expAnchor = document.createElement("a");
             expAnchor.setAttribute("name", exp.id);
-            expAnchor.setAttribute("class", "exp-anchor");
+            expAnchor.setAttribute("class", "banner-offset-anchor");
             expCard.appendChild(expAnchor);
 
             //Container for time and img

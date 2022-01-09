@@ -26,7 +26,7 @@ var loadSkills = function() {
             skillsContainer.appendChild(skillCard);
             index++;
 
-            if(index > NUM_SKILLS_TO_SHOW) { break; }
+            if(index >= NUM_SKILLS_TO_SHOW) { break; }
         }
     });
 }
@@ -67,7 +67,7 @@ var loadExperience = function() {
             expContainer.appendChild(expCard);
             index++;
 
-            if(index > NUM_EXP_TO_SHOW) { break; }
+            if(index >= NUM_EXP_TO_SHOW) { break; }
         }
     });
 }
@@ -103,13 +103,18 @@ var loadProjects = function() {
             projImg.setAttribute("class", "project-image");
             projImg.setAttribute("src", proj.image);
 
-
             projCard.appendChild(projContent);
             projCard.appendChild(projImg);
+            
+            //Redirect on click
+            projCard.onclick = () => {
+                location.href = "/pages/projects/#" + proj.id;
+            };
+
             projContainer.appendChild(projCard);
             index++;
 
-            if(index > NUM_PROJECTS_TO_SHOW) { break; }
+            if(index >= NUM_PROJECTS_TO_SHOW) { break; }
         }
     });
 }

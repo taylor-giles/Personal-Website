@@ -156,6 +156,8 @@
   background-color: transparent;
   border-color: var(--dark-gray);
   margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 .button.pill:hover {
   background-color: var(--dark-gray);
@@ -255,4 +257,10 @@ body {
 .tab.active {
   background-color: var(--accent);
   opacity: 100%;
+}
+.banner-offset-anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }

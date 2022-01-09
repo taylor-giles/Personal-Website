@@ -1,6 +1,6 @@
 /* Banner */
 #banner {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 #experience-container{
@@ -10,7 +10,7 @@
 }
 
 /* Items */
-.experience-item {
+  .experience-item {
     background-color: var(--secondary-light);
     color: var(--primary-dark);
     height: auto;
@@ -77,12 +77,6 @@
     max-width: 100%;
     padding: 40px;
     padding-left: 20px;
-  }
-  .exp-anchor {
-    display: block;
-    position: relative;
-    top: -100px;
-    visibility: hidden;
   }
   .exp-skills-container {
     margin-top: 20px;
