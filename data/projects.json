@@ -93,5 +93,22 @@
       "Javascript",
       "Firebase"
     ]
+  },
+
+  {
+    "id": "arch",
+    "title" : "Arch Linux Scripts",
+    "links" : [
+      {
+        "display": "GitHub",
+        "url": "https://github.com/taylor-giles/Arch-Config"
+      }
+    ],
+    "description" : "A collection of scripts to install and configure Arch Linux in an automated, customized way.",
+    "image" : "/images/arch-logo.png",
+    "skills" : [
+      "Shell Script",
+      "Linux"
+    ]
   }
 ]
