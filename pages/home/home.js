@@ -3,7 +3,7 @@
  * 
  * The scripts in this file are used to dynamically populate the home page
  */
-import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE, loadJSONFromFile } from "/src/constants.js";
+import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
  const NUM_SKILLS_TO_SHOW = 9;
  const NUM_EXP_TO_SHOW = 4;
  const NUM_PROJECTS_TO_SHOW = 4;
@@ -12,6 +12,7 @@ window.onload = function() {
     loadSkills();
     loadExperience();
     loadProjects();
+    refreshHash();
 }
 
 var loadSkills = function() {

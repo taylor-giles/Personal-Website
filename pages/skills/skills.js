@@ -45,7 +45,7 @@ var loadSkills = function() {
                 if(exp.skills.includes(skill)){
                     //Experience item
                     let expItem = document.createElement("div");
-                    expItem.setAttribute("class", "skill-list-item skill-exp-item");
+                    expItem.setAttribute("class", "card skill-list-item skill-exp-item");
 
                     //Experience content
                     let expContent = document.createElement("div");
@@ -77,7 +77,7 @@ var loadSkills = function() {
                 if(proj.skills.includes(skill)){
                     //Project item
                     let projItem = document.createElement("div");
-                    projItem.setAttribute("class", "skill-list-item skill-proj-item");
+                    projItem.setAttribute("class", "card skill-list-item skill-proj-item");
 
                     //Project content
                     let projContent = document.createElement("div");
