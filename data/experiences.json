@@ -22,9 +22,8 @@
         "time": "Aug. 2021 - Dec. 2021",
         "description": "As a TA, I assisted students in SBU's \"Systems Fundamentals I\" course, which teaches MIPS assembly, Boolean algebra, and the basics of CPU engineering. I held one-on-one office hours (3 hrs/week) to answer student questions, and assisted the professor by creating and proctoring various quizzes and exams.",
         "skills": [
-            "Assembly",
-            "MIPS",
             "Teaching",
+            "Assembly",
             "Organization"
         ],
         "image": "/images/sbu-logo.png"
@@ -37,11 +36,11 @@
         "time": "Sep. 2020 - Jan. 2021",
         "description": "I was contracted by LaunchPad, an advertizing analytics startup company, to completely overhaul their product's web app. I was able to analyze their existing codebase and remove a considerable number of redundancies, while implementing a more modular and feature-rich API.",
         "skills": [
-            "Organization",
             "Legacy Codebase",
-            "Problem Solving",
             "Javascript",
-            "HTML/CSS"
+            "HTML/CSS",
+            "Organization",
+            "Problem Solving"
         ],
         "image": "/images/launchpad-logo.png"
     },

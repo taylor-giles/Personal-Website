@@ -12,3 +12,12 @@ export const loadJSONFromFile = function(jsonFilePath, callback){
     xmlhttp.open("GET", jsonFilePath, true);
     xmlhttp.send();
 }
+
+export const refreshHash = function(){
+    //Refresh the hash (wait for everything to load before scrolling)
+    let givenHash = location.hash;
+    if(givenHash){
+        location.replace("#"); //Remove hash without adding to history
+        setTimeout(function() { location.replace(givenHash) }, 100); //Add hash back in to cause autoscroll
+    }
+}

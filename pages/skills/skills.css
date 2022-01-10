@@ -1,0 +1,56 @@
+/* Banner */
+#banner {
+  opacity: 100%;
+}
+
+#skills-container{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Items */
+  .skill-section {
+    color: var(--primary-light);
+    height: auto;
+    font-size: 12pt;
+    margin-top: 25px;
+    padding: 25px;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .skill-header {
+    font-size: 20pt;
+    color: var(--primary-light);
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+
+  /* Skills Project Items */
+  .skill-list-item{
+    background-color: var(--secondary-light);
+    color: var(--primary-dark);
+    margin-top: 10px;
+    padding: 20px;
+    cursor: pointer;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .skill-content-title {
+    color: var(--primary-dark);
+    font-size: 14pt;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .skill-exp-item::before{
+    content: url("/images/icons/work.svg");
+    margin-right: 20px;
+  }
+  .skill-proj-item::before{
+    content: url("/images/icons/science.svg");
+    margin-right: 20px;
+  }

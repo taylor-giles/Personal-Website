@@ -3,17 +3,11 @@
  * 
  * The scripts in this file are used to dynamically populate the projerience page
  */
- import { PROJECTS_FILE, loadJSONFromFile } from "/src/constants.js";
+import { PROJECTS_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
 
  window.onload = function() {
     loadProjects();
-
-    //Refresh the hash (wait for everything to load before scrolling)
-    let givenHash = location.hash;
-    if(givenHash){
-        location.replace("#"); //Remove hash without adding to history
-        setTimeout(function() { location.replace(givenHash) }, 100); //Add hash back in to cause autoscroll
-    }
+    refreshHash();
 }
 
 var loadProjects = function() {
@@ -80,6 +74,10 @@ var loadProjects = function() {
                 let projSkill = document.createElement("button");
                 projSkill.setAttribute("class", "button pill");
                 projSkill.innerHTML = skill;
+                projSkill.onclick = () => {
+                    //Redirect on click
+                    location.href = "/pages/skills/#" + skill.replace(/\s+/g, '-').toLowerCase();
+                }
                 projSkills.appendChild(projSkill);
             }
             projContent.appendChild(projSkills);

@@ -3,18 +3,13 @@
  * 
  * The scripts in this file are used to dynamically populate the experience page
  */
- import { EXP_FILE, loadJSONFromFile } from "/src/constants.js";
+ import { EXP_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
 
  window.onload = function() {
     loadExperience();
-
-    //Refresh the hash (wait for everything to load before scrolling)
-    let givenHash = location.hash;
-    if(givenHash){
-        location.replace("#"); //Remove hash without adding to history
-        setTimeout(function() { location.replace(givenHash) }, 100); //Add hash back in to cause autoscroll
-    }
+    refreshHash();
 }
+
 
 var loadExperience = function() {
     let expContainer = document.getElementById("experience-container");
@@ -97,6 +92,10 @@ var loadExperience = function() {
                 expSkill.setAttribute("class", "button pill");
                 expSkill.innerHTML = skill;
                 expSkills.appendChild(expSkill);
+                expSkill.onclick = () => {
+                    //Redirect on click
+                    location.href = "/pages/skills/#" + skill.replace(/\s+/g, '-').toLowerCase();
+                }
             }
             expContent.appendChild(expSkills);
 

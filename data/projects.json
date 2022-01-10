@@ -16,6 +16,7 @@
       "Java"
     ]
   },
+  
   {
     "id": "hackathon",
     "title" : "\"Planet Stonedog\"",
@@ -36,6 +37,7 @@
       "HTML/CSS"
     ]
   },
+
   {
     "id":"color-lamp",
     "title" : "Colorful IoT Lamps",
@@ -53,6 +55,7 @@
       "Javascript"
     ]
   },
+
   {
     "id": "watering-system",
     "title" : "Auto-Watering System",
@@ -69,6 +72,7 @@
       "C/C++"
     ]
   },
+
   {
     "id": "website",
     "title" : "Personal Website",
