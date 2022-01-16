@@ -63,6 +63,17 @@
   .exp-location::before{
     content: url('/images/icons/location.svg');
   }
+  .exp-links-container{
+    display:flex;
+    flex-direction: column;
+  }
+  .exp-link {
+    font-size: 12pt;
+    color: var(--primary-dark);
+  }
+  .exp-link::before{
+    content: url('/images/icons/link.svg');
+  }
   .exp-description {
     margin-top: 15px;
     display: flex;

@@ -31,7 +31,12 @@
     {
         "id": "launchpad",
         "title": "Contracted Developer",
-        "location": "Remote",
+        "links":[
+            {
+                "display": "LaunchPad",
+                "url": "https://launchpadduo.com/"
+            }
+        ],
         "employer": "LaunchPad",
         "time": "Sep. 2020 - Jan. 2021",
         "description": "I was contracted by LaunchPad, an advertizing analytics startup company, to completely overhaul their product's web app. I was able to analyze their existing codebase and remove a considerable number of redundancies, while implementing a more modular and feature-rich API.",

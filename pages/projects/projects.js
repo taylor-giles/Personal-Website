@@ -42,7 +42,7 @@ var loadProjects = function() {
             projTitle.innerHTML = proj.title;
             projContent.appendChild(projTitle);
 
-            //Link
+            //Links
             if(proj.links){
                 //Links container
                 let linksContainer = document.createElement("div");

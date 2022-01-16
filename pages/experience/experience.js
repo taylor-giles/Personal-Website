@@ -71,10 +71,29 @@ var loadExperience = function() {
             expContent.appendChild(expEmployer);
 
             //Location
-            let expLocation = document.createElement("div");
-            expLocation.setAttribute("class", "exp-attribute exp-location");
-            expLocation.innerHTML = exp.location;
-            expContent.appendChild(expLocation);
+            if(exp.location){
+                let expLocation = document.createElement("div");
+                expLocation.setAttribute("class", "exp-attribute exp-location");
+                expLocation.innerHTML = exp.location;
+                expContent.appendChild(expLocation);
+            }
+
+            //Links
+            if(exp.links){
+                //Links container
+                let linksContainer = document.createElement("div");
+                linksContainer.setAttribute("class", "exp-links-container");
+                for(let link of exp.links){
+                    let expLink = document.createElement("a");
+                    expLink.setAttribute("class", "exp-link exp-attribute");
+                    expLink.setAttribute("href", link.url);
+                    expLink.setAttribute("rel", "noopener noreferrer");
+                    expLink.setAttribute("target", "_blank");
+                    expLink.innerHTML = link.display;
+                    linksContainer.appendChild(expLink);
+                }
+                expContent.appendChild(linksContainer);
+            }
 
             //Description
             let expDescription = document.createElement("div");
