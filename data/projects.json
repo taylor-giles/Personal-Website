@@ -39,20 +39,19 @@
   },
 
   {
-    "id":"color-lamp",
-    "title" : "Colorful IoT Lamps",
-    "links":[
+    "id": "orb",
+    "title": "Magic IoT Orbs",
+    "links": [
       {
         "display": "GitHub",
-        "url": "https://github.com/taylor-giles/Color-Lamp"
+        "url": "https://github.com/taylor-giles/Magic-Orb"
       }
     ],
-    "description" : "A set of IoT connected color-changing lamps, designed for some friends to facilitate staying connected through trying times.",
-    "image" : "/images/lamp.jpg",
-    "skills" : [
+    "description": "A set of three IoT-connected orbs which all change color in sync whenever one of them is activated.",
+    "skills":[
       "Arduino",
       "C/C++",
-      "Javascript"
+      "Firebase"
     ]
   },
 
@@ -70,6 +69,24 @@
     "skills" : [
       "Arduino",
       "C/C++"
+    ]
+  },
+
+  {
+    "id":"color-lamp",
+    "title" : "Colorful IoT Lamps",
+    "links":[
+      {
+        "display": "GitHub",
+        "url": "https://github.com/taylor-giles/Color-Lamp"
+      }
+    ],
+    "description" : "A set of IoT connected color-changing lamps, designed for some friends to facilitate staying connected through trying times.",
+    "image" : "/images/lamp.jpg",
+    "skills" : [
+      "Arduino",
+      "C/C++",
+      "Javascript"
     ]
   },
 
