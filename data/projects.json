@@ -39,20 +39,21 @@
   },
 
   {
-    "id":"color-lamp",
-    "title" : "Colorful IoT Lamps",
-    "links":[
+    "id": "orb",
+    "title": "Magic IoT Orbs",
+    "links": [
       {
         "display": "GitHub",
-        "url": "https://github.com/taylor-giles/Color-Lamp"
+        "url": "https://github.com/taylor-giles/Magic-Orb"
       }
     ],
-    "description" : "A set of IoT connected color-changing lamps, designed for some friends to facilitate staying connected through trying times.",
-    "image" : "/images/lamp.jpg",
-    "skills" : [
+    "description": "A set of three IoT-connected orbs which all change color in sync whenever one of them is activated.",
+    "image": "/images/blue-orb-hand.jpg",
+    "skills":[
       "Arduino",
       "C/C++",
-      "Javascript"
+      "Firebase",
+      "Database"
     ]
   },
 
@@ -91,7 +92,8 @@
     "skills" : [
       "HTML/CSS",
       "Javascript",
-      "Firebase"
+      "Firebase",
+      "Database"
     ]
   },
 
@@ -109,6 +111,43 @@
     "skills" : [
       "Shell Script",
       "Linux"
+    ]
+  },
+
+  {
+    "id": "t5l",
+    "title": "Top 5 Lister",
+    "links":[
+      {
+        "display": "GitHub",
+        "url": "https://github.com/taylor-giles-sbu/Top5Lister"
+      }
+    ],
+    "description": "A final project for the CSE316 Software Development course at SBU - a MERN web app which allows users to create, share, and view lists of their top 5 favorite items in any category they choose.",
+    "image": "/images/t5l-logo.png",
+    "skills":[
+      "React",
+      "HTML/CSS",
+      "Javascript",
+      "Database"
+    ]
+  },
+
+  {
+    "id":"color-lamp",
+    "title" : "Colorful IoT Lamps",
+    "links":[
+      {
+        "display": "GitHub",
+        "url": "https://github.com/taylor-giles/Color-Lamp"
+      }
+    ],
+    "description" : "A set of IoT connected color-changing lamps, designed for some friends to facilitate staying connected through trying times.",
+    "image" : "/images/lamp.jpg",
+    "skills" : [
+      "Arduino",
+      "C/C++",
+      "Javascript"
     ]
   }
 ]
