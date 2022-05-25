@@ -1,6 +1,25 @@
 [
     {
         "id": "crit",
+        "title": "Full-Stack Developer",
+        "location": "Stony Brook University",
+        "employer": "Campus Residences IT",
+        "time": "Mar. 2022 - Present",
+        "description": "I work on several internal projects within the Campus Residences IT department, including web apps for monitoring the status many IoT devices around campus, such as TV screens and printers.",
+        "skills": [
+            "React",
+            "Javascript",
+            "Vue",
+            "C#",
+            ".NET",
+            "Postgres",
+            "SQL",
+            "DevOps"
+        ],
+        "image": "/images/sbu-campres.png"
+    },
+    {
+        "id": "pt",
         "title": "IT Team Coordinator",
         "location": "Stony Brook University",
         "employer": "Campus Residences IT",
@@ -19,8 +38,8 @@
         "title": "Android Security Research",
         "location": "Stony Brook University",
         "employer": "Joydeep Mitra",
-        "time": "Jan. 2022 - Present",
-        "description": "I am a student researcher on Prof. Joydeep Mitra's 'Security Analysis of Contact Tracing Apps' research project, which seeks to analyze and scrutinize the security of the COVID-19 contact tracing Android apps endorsed by each U.S. state. The project involves decompilation of .apk files and in-depth analysis of the generated code.",
+        "time": "Jan. 2022 - May 2022",
+        "description": "I was a student researcher on Prof. Joydeep Mitra's 'Security Analysis of Contact Tracing Apps' research project, which seeks to analyze and scrutinize the security of the COVID-19 contact tracing Android apps endorsed by each U.S. state. The project involves decompilation of .apk files and in-depth analysis of the generated code.",
         "skills": [
             "Android",
             "Security",
