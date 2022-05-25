@@ -4,22 +4,22 @@
  * The scripts in this file are used to dynamically populate the home page
  */
 import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
- const NUM_SKILLS_TO_SHOW = 9;
- const NUM_EXP_TO_SHOW = 4;
- const NUM_PROJECTS_TO_SHOW = 4;
+const NUM_SKILLS_TO_SHOW = 9;
+const NUM_EXP_TO_SHOW = 4;
+const NUM_PROJECTS_TO_SHOW = 4;
 
-window.onload = function() {
+window.onload = function () {
     loadSkills();
     loadExperience();
     loadProjects();
     refreshHash();
 }
 
-var loadSkills = function() {
+var loadSkills = function () {
     let skillsContainer = document.getElementById("skills-container");
     loadJSONFromFile(SKILLS_FILE, (skills) => {
         let index = 0;
-        for(let skill of skills){
+        for (let skill of skills) {
             let skillCard = document.createElement("div");
             skillCard.innerHTML = skill.name;
             skillCard.setAttribute("class", "skill");
@@ -27,16 +27,16 @@ var loadSkills = function() {
             skillsContainer.appendChild(skillCard);
             index++;
 
-            if(index >= NUM_SKILLS_TO_SHOW) { break; }
+            if (index >= NUM_SKILLS_TO_SHOW) { break; }
         }
     });
 }
 
-var loadExperience = function() {
+var loadExperience = function () {
     let expContainer = document.getElementById("experience-container");
     loadJSONFromFile(EXP_FILE, (exps) => {
         let index = 0;
-        for(let exp of exps){
+        for (let exp of exps) {
             //Set up card
             let expCard = document.createElement("div");
             expCard.setAttribute("class", "experience-item card");
@@ -68,16 +68,16 @@ var loadExperience = function() {
             expContainer.appendChild(expCard);
             index++;
 
-            if(index >= NUM_EXP_TO_SHOW) { break; }
+            if (index >= NUM_EXP_TO_SHOW) { break; }
         }
     });
 }
 
-var loadProjects = function() {
+var loadProjects = function () {
     let projContainer = document.getElementById("projects-container");
     loadJSONFromFile(PROJECTS_FILE, (projects) => {
         let index = 0;
-        for(let proj of projects){
+        for (let proj of projects) {
             //Set up card
             let projCard = document.createElement("div");
             projCard.setAttribute("class", "project-item card");
@@ -103,10 +103,10 @@ var loadProjects = function() {
             let projImg = document.createElement("img");
             projImg.setAttribute("class", "project-image");
             projImg.setAttribute("src", proj.image);
-
-            projCard.appendChild(projContent);
-            projCard.appendChild(projImg);
             
+            projCard.appendChild(projImg);
+            projCard.appendChild(projContent);
+
             //Redirect on click
             projCard.onclick = () => {
                 location.href = "/pages/projects/#" + proj.id;
@@ -115,7 +115,7 @@ var loadProjects = function() {
             projContainer.appendChild(projCard);
             index++;
 
-            if(index >= NUM_PROJECTS_TO_SHOW) { break; }
+            if (index >= NUM_PROJECTS_TO_SHOW) { break; }
         }
     });
 }

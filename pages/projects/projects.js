@@ -5,16 +5,16 @@
  */
 import { PROJECTS_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
 
- window.onload = function() {
+window.onload = function () {
     loadProjects();
     refreshHash();
 }
 
-var loadProjects = function() {
+var loadProjects = function () {
     let projContainer = document.getElementById("projects-container");
     loadJSONFromFile(PROJECTS_FILE, (projects) => {
         let index = 0;
-        for(let proj of projects){
+        for (let proj of projects) {
             //Set up card
             let projCard = document.createElement("div");
             projCard.setAttribute("class", "project-item");
@@ -26,13 +26,24 @@ var loadProjects = function() {
             projAnchor.setAttribute("class", "banner-offset-anchor");
             projContainer.appendChild(projAnchor);
 
-            //Image
-            let projImage = document.createElement("img");
-            projImage.setAttribute("src", proj.image);
-            projImage.setAttribute("class", "proj-image");
-            projCard.appendChild(projImage);
+            //Container for image, course, and time
+            let metadataPanel = document.createElement("div");
+            metadataPanel.setAttribute("class", "proj-metadata");
 
-            //Container for title, link, and description
+            //Image
+            if (proj.image) {
+                let projImage = document.createElement("img");
+                projImage.setAttribute("src", proj.image);
+                projImage.setAttribute("class", "proj-image");
+                metadataPanel.appendChild(projImage);
+            }
+
+            //Time
+            if (proj.time) {
+
+            }
+
+            //Container for title, link, course, time, and description
             let projContent = document.createElement("div");
             projContent.setAttribute("class", "proj-content");
 
@@ -40,14 +51,28 @@ var loadProjects = function() {
             let projTitle = document.createElement("div");
             projTitle.setAttribute("class", "proj-attribute proj-title");
             projTitle.innerHTML = proj.title;
+
+            //GitHub (attached to title)
+            if (proj.github) {
+                let githubAnchor = document.createElement("a");
+                let githubIcon = document.createElement("img");
+                githubIcon.setAttribute("src", "/images/icons/github.svg")
+                githubIcon.setAttribute("class", "github-icon");
+                githubAnchor.appendChild(githubIcon)
+                githubAnchor.setAttribute("href", proj.github);
+                githubAnchor.setAttribute("rel", "noopener noreferrer");
+                githubAnchor.setAttribute("target", "_blank");
+                projTitle.appendChild(githubAnchor)
+            }
+
             projContent.appendChild(projTitle);
 
             //Links
-            if(proj.links){
+            if (proj.links) {
                 //Links container
                 let linksContainer = document.createElement("div");
                 linksContainer.setAttribute("class", "proj-links-container");
-                for(let link of proj.links){
+                for (let link of proj.links) {
                     let projLink = document.createElement("a");
                     projLink.setAttribute("class", "proj-link");
                     projLink.setAttribute("href", link.url);
@@ -57,6 +82,14 @@ var loadProjects = function() {
                     linksContainer.appendChild(projLink);
                 }
                 projContent.appendChild(linksContainer);
+            }
+
+            //Course
+            if (proj.course) {
+                let projCourse = document.createElement("div");
+                projCourse.setAttribute("class", "proj-attribute proj-course");
+                projCourse.innerHTML = proj.course;
+                projContent.appendChild(projCourse);
             }
 
             //Description
@@ -70,7 +103,7 @@ var loadProjects = function() {
             projSkills.setAttribute("class", "proj-skills-container");
 
             //Skills pills
-            for(let skill of proj.skills){
+            for (let skill of proj.skills) {
                 let projSkill = document.createElement("button");
                 projSkill.setAttribute("class", "button pill");
                 projSkill.innerHTML = skill;
@@ -82,6 +115,7 @@ var loadProjects = function() {
             }
             projContent.appendChild(projSkills);
 
+            projCard.appendChild(metadataPanel);
             projCard.appendChild(projContent);
             projContainer.appendChild(projCard);
             index++;

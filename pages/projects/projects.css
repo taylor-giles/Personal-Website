@@ -25,6 +25,11 @@
     animation-duration: 1s;
     animation-fill-mode: forwards; 
   }
+  .proj-metadata {
+    width: 125px;
+    height: 100%;
+    margin-right: 30px;
+  }
   .proj-content {
     width: 100%;
     height: 100%;
@@ -54,16 +59,29 @@
     display: flex;
     flex-direction: column;
   }
-  .exp-description::before{
+  .proj-attribute::before{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: -25%;
+  }
+  /* .proj-description::before{
     content: "Description:";
     font-weight: 600;
     margin-bottom: 5px;
-  }
+  } */
   .proj-image {
     width: 125px;
     height: 125px;
-    margin-right: 30px;
+    object-fit: cover;
   }
   .proj-skills-container {
     margin-top: 20px;
+  }
+  /* .proj-course::before{
+    content: url('/images/icons/school.svg');
+  } */
+  .github-icon {
+    width: 18px;
+    margin-inline: 10px;
+    cursor: pointer;
   }
