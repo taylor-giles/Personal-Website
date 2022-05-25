@@ -8,10 +8,12 @@
     "image": "/images/chc-round.png",
     "skills":[
       "React",
-      "HTML/CSS",
       "Javascript",
       "MongoDB",
-      "AWS"
+      "AWS",
+      "Express",
+      "NGIИX",
+      "Linux"
     ],
     "course": "Fundamentals of Software Development (SBU)"
   },
@@ -83,7 +85,7 @@
     "links" : [
       { 
         "display": "taylorgiles.me",
-        "url": "https://taylorgiles.me/pages/home/"
+        "url": "https://taylorgiles.me"
       }
     ],
     "description" : "A website to showcase my work and help people get to know me a little better.",
@@ -117,9 +119,10 @@
     "image": "/images/t5l-logo.png",
     "skills":[
       "React",
-      "HTML/CSS",
+      "Express",
       "Javascript",
-      "MongoDB"
+      "MongoDB",
+      "HTML/CSS"
     ],
     "course": "Fundamentals of Software Development (SBU)"
   },
