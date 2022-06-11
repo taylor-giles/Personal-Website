@@ -3,15 +3,17 @@
  * 
  * The scripts in this file are used to dynamically populate the home page
  */
-import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
+import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE, COURSEWORK_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
 const NUM_SKILLS_TO_SHOW = 9;
 const NUM_EXP_TO_SHOW = 4;
 const NUM_PROJECTS_TO_SHOW = 4;
+const NUM_COURSEWORK_TO_SHOW = 3;
 
 window.onload = function () {
     loadSkills();
     loadExperience();
     loadProjects();
+    loadCoursework();
     refreshHash();
 }
 
@@ -116,6 +118,53 @@ var loadProjects = function () {
             index++;
 
             if (index >= NUM_PROJECTS_TO_SHOW) { break; }
+        }
+    });
+}
+
+var loadCoursework = function () {
+    let assignmentContainer = document.getElementById("coursework-container");
+    loadJSONFromFile(COURSEWORK_FILE, (coursework) => {
+        let index = 0;
+        for (let assignment of coursework) {
+            //Set up card
+            let assignmentCard = document.createElement("div");
+            assignmentCard.setAttribute("class", "coursework-item card");
+            assignmentCard.style["animation-delay"] = (0.15 * index) + "s"; //Delayed fade animation
+
+            //Set up content container
+            let assignmentContent = document.createElement("div");
+            assignmentContent.setAttribute("class", "coursework-content");
+
+            //Title
+            let assignmentTitle = document.createElement("div");
+            assignmentTitle.setAttribute("class", "coursework-title");
+            assignmentTitle.innerHTML = assignment.title;
+            assignmentContent.appendChild(assignmentTitle);
+
+            //Description
+            let assignmentDesc = document.createElement("div");
+            assignmentDesc.setAttribute("class", "coursework-description");
+            assignmentDesc.innerHTML = assignment.description;
+            assignmentContent.appendChild(assignmentDesc);
+
+            //Image
+            let assignmentImg = document.createElement("img");
+            assignmentImg.setAttribute("class", "coursework-image");
+            assignmentImg.setAttribute("src", assignment.image);
+            
+            assignmentCard.appendChild(assignmentImg);
+            assignmentCard.appendChild(assignmentContent);
+
+            //Redirect on click
+            assignmentCard.onclick = () => {
+                location.href = "/pages/coursework/#" + assignment.id;
+            };
+
+            assignmentContainer.appendChild(assignmentCard);
+            index++;
+
+            if (index >= NUM_COURSEWORK_TO_SHOW) { break; }
         }
     });
 }

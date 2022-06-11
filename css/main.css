@@ -164,6 +164,24 @@
   color: var(--primary-light);
 }
 
+.button.pill.light {
+  font-size: 10pt;
+  border-radius: 20px;
+  padding: 3px;
+  padding-inline-end: 10px;
+  padding-inline-start: 10px;
+  background-color: var(--secondary-light);
+  border-color: transparent;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.button.pill.light:hover {
+  background-color: var(--primary-light);
+  color: var(--dark-gray);
+}
+
 
 /* HTML (whole document) */
 html {
