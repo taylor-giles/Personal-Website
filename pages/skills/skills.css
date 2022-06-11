@@ -9,6 +9,18 @@
   margin-top: 20px;
 }
 
+#skills-pills-container{
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Pills */
+.skill-pill {
+  font-size: 16pt;
+}
+
 /* Items */
   .skill-section {
     color: var(--primary-light);
@@ -52,5 +64,9 @@
   }
   .skill-proj-item::before{
     content: url("/images/icons/science.svg");
+    margin-right: 20px;
+  }
+  .skill-coursework-item::before{
+    content: url("/images/icons/school.svg");
     margin-right: 20px;
   }

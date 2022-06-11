@@ -1,6 +1,7 @@
 export const SKILLS_FILE = "/data/skills.json";
 export const EXP_FILE = "/data/experiences.json";
 export const PROJECTS_FILE = "/data/projects.json";
+export const COURSEWORK_FILE = "/data/coursework.json";
 
 export const loadJSONFromFile = function(jsonFilePath, callback){
     let xmlhttp = new XMLHttpRequest();

@@ -1,9 +1,9 @@
 /**
  * Taylor Giles Personal Website
  * 
- * The scripts in this file are used to dynamically populate the projerience page
+ * The scripts in this file are used to dynamically populate the skills page
  */
- import { PROJECTS_FILE, EXP_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
+ import { PROJECTS_FILE, EXP_FILE, COURSEWORK_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
 
  window.onload = function() {
     loadSkills();
@@ -13,12 +13,24 @@
 var loadSkills = function() {
     let projects = [];
     let experiences = [];
+    let coursework = [];
     let skills = new Set();
 
     let buildContent = () => {
         //Build HTML content
+        let pillsContainer = document.getElementById("skills-pills-container");
         let skillsContainer = document.getElementById("skills-container");
         for(let skill of skills){
+            //Pill
+            let pill = document.createElement("button");
+            pill.setAttribute("class", "button pill light");
+            pill.innerHTML = skill;
+            pill.onclick = () => {
+                //Redirect on click
+                location.href = "/pages/skills/#" + skill.replace(/\s+/g, '-').toLowerCase();
+            }
+            pillsContainer.appendChild(pill);
+
             //Skill item
             let skillSection = document.createElement("div");
             skillSection.setAttribute("class", "skill-section");
@@ -41,7 +53,6 @@ var loadSkills = function() {
 
             //Experiences
             for(let exp of experiences){
-                console.log(exp);
                 if(exp.skills.includes(skill)){
                     //Experience item
                     let expItem = document.createElement("div");
@@ -104,6 +115,38 @@ var loadSkills = function() {
                 }
             }
 
+            //Coursework
+            for(let assignment of coursework){
+                if(assignment.skills.includes(skill)){
+                    //Coursework item
+                    let assignmentItem = document.createElement("div");
+                    assignmentItem.setAttribute("class", "card skill-list-item skill-coursework-item");
+
+                    //Coursework content
+                    let assignmentContent = document.createElement("div");
+
+                    //Title
+                    let assignmentTitle = document.createElement("div");
+                    assignmentTitle.setAttribute("class", "skill-content-title");
+                    assignmentTitle.innerHTML = assignment.title;
+                    assignmentContent.appendChild(assignmentTitle);
+
+                    //Description
+                    let assignmentDescription = document.createElement("div");
+                    assignmentDescription.setAttribute("class", "skill-coursework-description");
+                    assignmentDescription.innerHTML = assignment.description;
+                    assignmentContent.appendChild(assignmentDescription);
+
+                    assignmentItem.appendChild(assignmentContent);
+
+                    //Redirect on click
+                    assignmentItem.onclick = () => {
+                        location.href = "/pages/coursework/#" + assignment.id;
+                    };
+                    skillContent.appendChild(assignmentItem);
+                }
+            }
+
             skillSection.appendChild(skillContent);
             skillsContainer.appendChild(skillSection);
         }
@@ -117,8 +160,13 @@ var loadSkills = function() {
             }
         }
         for(let exp of experiences){
-            console.log("Skills " + exp.skills);
             for(let skill of exp.skills){
+                skills.add(skill);
+            }
+        }
+        for(let assignment of coursework){
+
+            for(let skill of assignment.skills){
                 skills.add(skill);
             }
         }
@@ -149,5 +197,15 @@ var loadSkills = function() {
         });
     };
 
-    getProjects();
+    let getCoursework = () => {
+        //Get coursework
+        loadJSONFromFile(COURSEWORK_FILE, (assignments) => {
+            for(let assignment of assignments){
+                coursework.push(assignment);
+            }
+            getProjects();
+        });
+    }
+
+    getCoursework();
 }

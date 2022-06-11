@@ -23,8 +23,8 @@
         "title": "IT Team Coordinator",
         "location": "Stony Brook University",
         "employer": "Campus Residences IT",
-        "time": "Nov. 2019 - Present",
-        "description": "I direct a team of approximately 10 student technicians whose goal is to ensure that all printing/technology stations located around the campus are working smoothly and efficiently. This \"Print Team\" is a subset of the larger Campus Residences IT group - I coordinate the efforts of the Print Team with all other groups within C.R.I.T. to maximize effectiveness and efficiency.",
+        "time": "Nov. 2019 - May 2022",
+        "description": "I directed a team of 10-20 student technicians whose goal is to ensure that all printing/technology stations located around the campus are working smoothly and efficiently. This \"Print Team\" is a subset of the larger Campus Residences IT group - I coordinate the efforts of the Print Team with all other groups within C.R.I.T. to maximize effectiveness and efficiency.",
         "skills": [
             "Leadership",
             "Organization",
@@ -41,11 +41,11 @@
         "time": "Jan. 2022 - May 2022",
         "description": "I was a student researcher on Prof. Joydeep Mitra's 'Security Analysis of Contact Tracing Apps' research project, which seeks to analyze and scrutinize the security of the COVID-19 contact tracing Android apps endorsed by each U.S. state. The project involves decompilation of .apk files and in-depth analysis of the generated code.",
         "skills": [
-            "Android",
             "Security",
+            "Android",
             "Research"
         ],
-        "image": "/images/sbu-logo.png"
+        "image": "/images/security.png"
     },
     {
         "id": "ta",
@@ -87,12 +87,13 @@
         "title": "Private Tutor",
         "location": "Long Island",
         "employer": "High School & College Students",
-        "time": "May 2016 - Present",
-        "description": "For several years, I have been tutoring students in grades ranging from 2-12 as well as college students. Most frequently I help with mathematics (algebra, geometry, etc.) though I have also assisted with computer science, physical sciences, and developing skills necessary for essay writing and test taking.",
+        "time": "May 2016 ~ Dec. 2020",
+        "description": "For several years, I tutored students in grades ranging from 2-12 as well as college students. Most frequently I helped with mathematics (algebra, geometry, etc.) though I have also assisted with computer science, physical sciences, and developing skills necessary for essay writing and test taking.",
         "skills": [
             "Teaching",
             "Problem Solving",
             "Organization"
-        ]
+        ],
+        "image":"/images/tutor.png"
     }
 ]

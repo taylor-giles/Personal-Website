@@ -1,0 +1,52 @@
+[
+    {
+        "id": "chc",
+        "title": "Coffee House Comics",
+        "github": "https://github.com/Coffee-House-Comics",
+        "description": "A semester-long group project for CSE416 at SBU - a web-based community platform for creating and sharing comics & interactive stories.",
+        "image": "/images/chc-round.png",
+        "skills": [
+            "React",
+            "Javascript",
+            "MongoDB",
+            "AWS",
+            "Express",
+            "NGIИX",
+            "Cloud Computing",
+            "Linux"
+        ],
+        "course": "Fundamentals of Software Development (SBU)"
+    },
+    {
+        "id": "cse356",
+        "title": "Collaborative Document Editor",
+        "github": "https://github.com/CSE356-QTSC",
+        "description": "A group project for CSE356 at SBU - a collaborative document editor based on Operational Transformations (OT) with emphasis on scaling for performance under load.",
+        "image": "/images/cloud.png",
+        "skills": [
+            "Cloud Computing",
+            "DevOps",
+            "Javascript",
+            "MongoDB",
+            "ShareDB",
+            "NGIИX",
+            "Linux"
+        ],
+        "course": "Cloud Computing (SBU)"
+    },
+    {
+        "id": "t5l",
+        "title": "Top 5 Lister",
+        "github": "https://github.com/taylor-giles-sbu/Top5Lister",
+        "description": "A final project (individual) for CSE316 at SBU - a MERN web app which allows users to create, share, and view lists of their top 5 favorite items in any category they choose.",
+        "image": "/images/t5l-logo.png",
+        "skills": [
+            "React",
+            "Express",
+            "Javascript",
+            "MongoDB",
+            "HTML/CSS"
+        ],
+        "course": "Fundamentals of Software Development (SBU)"
+    }
+]

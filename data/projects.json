@@ -1,140 +1,92 @@
 [
   {
-    "id": "chc",
-    "type": "Coursework",
-    "title": "Coffee House Comics",
-    "github" : "https://github.com/Coffee-House-Comics",
-    "description": "A semester-long group project for CSE416 at SBU - a web-based community platform for creating and sharing comics & interactive stories.",
-    "image": "/images/chc-round.png",
-    "skills":[
-      "React",
-      "Javascript",
-      "MongoDB",
-      "AWS",
-      "Express",
-      "NGIИX",
-      "Linux"
-    ],
-    "course": "Fundamentals of Software Development (SBU)"
-  },
-  {
-    "id": "budget-manager",
-    "type": "Personal",
-    "title" : "Budget Manager",
-    "github" : "https://github.com/taylor-giles/Money-Manager",
-    "description" : "An Android app to help manage personal spending money by splitting into budgets and monitoring trends.",
-    "image" : "/images/money-manager.png",
-    "skills" : [
-      "Android",
-      "Kotlin",
-      "Java"
-    ]
-  },
-  
-  {
-    "id": "hackathon",
-    "type": "Personal",
-    "title" : "\"Planet Stonedog\"",
-    "github" : "https://github.com/taylor-giles/SBUHacks-Fall2021",
-    "links":[
-      {
-        "display": "stone-dog-planet.web.app",
-        "url": "https://stone-dog-planet.web.app"
-      }
-    ],
-    "description" : "An in-browser resource management game, made as a 24-hr SBUHacks hackathon project with some friends.",
-    "image" : "/images/stone-dog.png",
-    "skills" : [
-      "Javascript",
-      "HTML/CSS"
-    ]
-  },
-
-  {
     "id": "orb",
-    "type": "Personal",
     "title": "Magic IoT Orbs",
-    "github" : "https://github.com/taylor-giles/Magic-Orb",
+    "github": "https://github.com/taylor-giles/Magic-Orb",
     "description": "A set of three IoT-connected orbs which all change color in sync whenever one of them is activated.",
     "image": "/images/blue-orb-hand.jpg",
-    "skills":[
+    "skills": [
       "Arduino",
       "C/C++",
       "Firebase"
     ]
   },
-
+  {
+    "id": "budget-manager",
+    "title": "Budget Manager",
+    "github": "https://github.com/taylor-giles/Money-Manager",
+    "description": "An Android app to help manage personal spending money by splitting into budgets and monitoring trends.",
+    "image": "/images/money-manager.png",
+    "skills": [
+      "Android",
+      "Kotlin",
+      "Java"
+    ]
+  },
+  {
+    "id": "hackathon",
+    "title": "\"Planet Stonedog\"",
+    "github": "https://github.com/taylor-giles/SBUHacks-Fall2021",
+    "links": [
+      {
+        "display": "stone-dog-planet.web.app",
+        "url": "https://stone-dog-planet.web.app"
+      }
+    ],
+    "description": "An in-browser resource management game, made as a 24-hr SBUHacks hackathon project with some friends.",
+    "image": "/images/stone-dog.png",
+    "skills": [
+      "Javascript",
+      "HTML/CSS"
+    ]
+  },
   {
     "id": "watering-system",
-    "type": "Personal",
-    "title" : "Auto-Watering System",
-    "github" : "https://github.com/taylor-giles/Plant-Watering",
-    "description" : "An Arduino project designed to automate the process of watering several house plants.",
-    "image" : "/images/succulent.jpg",
-    "skills" : [
+    "title": "Auto-Watering System",
+    "github": "https://github.com/taylor-giles/Plant-Watering",
+    "description": "An Arduino project designed to automate the process of watering several house plants.",
+    "image": "/images/succulent.jpg",
+    "skills": [
       "Arduino",
       "C/C++"
     ]
   },
-
   {
     "id": "website",
-    "type": "Personal",
-    "title" : "Personal Website",
-    "github" : "https://github.com/taylor-giles/Personal-Website",
-    "links" : [
-      { 
+    "title": "Personal Website",
+    "github": "https://github.com/taylor-giles/Personal-Website",
+    "links": [
+      {
         "display": "taylorgiles.me",
         "url": "https://taylorgiles.me"
       }
     ],
-    "description" : "A website to showcase my work and help people get to know me a little better.",
-    "image" : "/images/website-logo.png",
-    "skills" : [
+    "description": "A website to showcase my work and help people get to know me a little better.",
+    "image": "/images/website-logo.png",
+    "skills": [
       "HTML/CSS",
       "Javascript",
       "Firebase"
     ]
   },
-
   {
     "id": "arch",
-    "type": "Personal",
-    "title" : "Arch Linux Scripts",
-    "github" : "https://github.com/taylor-giles/Arch-Config",
-    "description" : "A collection of scripts to install and configure Arch Linux in an automated, customized way.",
-    "image" : "/images/arch-logo.png",
-    "skills" : [
+    "title": "Arch Linux Scripts",
+    "github": "https://github.com/taylor-giles/Arch-Config",
+    "description": "A collection of scripts to install and configure Arch Linux in an automated, customized way.",
+    "image": "/images/arch-logo.png",
+    "skills": [
       "Shell Script",
       "Linux"
     ]
   },
-
   {
-    "id": "t5l",
-    "type": "Coursework",
-    "title": "Top 5 Lister",
-    "github" : "https://github.com/taylor-giles-sbu/Top5Lister",
-    "description": "A final project (individual) for the CSE316 Software Development course at SBU - a MERN web app which allows users to create, share, and view lists of their top 5 favorite items in any category they choose.",
-    "image": "/images/t5l-logo.png",
-    "skills":[
-      "React",
-      "Express",
-      "Javascript",
-      "MongoDB",
-      "HTML/CSS"
-    ],
-    "course": "Fundamentals of Software Development (SBU)"
-  },
-
-  {
-    "id":"color-lamp",
-    "type": "Personal",
-    "title" : "Colorful IoT Lamps",
-    "github" : "https://github.com/taylor-giles/Color-Lamp",
-    "description" : "A set of IoT connected color-changing lamps, designed for some friends to facilitate staying connected through trying times.",
-    "image" : "/images/lamp.jpg",
-    "skills" : [
+    "id": "color-lamp",
+    "title": "Colorful IoT Lamps",
+    "github": "https://github.com/taylor-giles/Color-Lamp",
+    "description": "A set of IoT connected color-changing lamps, designed for some friends to facilitate staying connected through trying times.",
+    "image": "/images/lamp.jpg",
+    "skills": [
       "Arduino",
       "C/C++",
       "Javascript"

@@ -1,7 +1,7 @@
 /**
  * Taylor Giles Personal Website
  * 
- * The scripts in this file are used to dynamically populate the projerience page
+ * The scripts in this file are used to dynamically populate the projects page
  */
 import { PROJECTS_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
 
@@ -36,11 +36,6 @@ var loadProjects = function () {
                 projImage.setAttribute("src", proj.image);
                 projImage.setAttribute("class", "proj-image");
                 metadataPanel.appendChild(projImage);
-            }
-
-            //Time
-            if (proj.time) {
-
             }
 
             //Container for title, link, course, time, and description
