@@ -14,11 +14,6 @@ window.onload = function () {
     loadExperience();
     loadProjects();
     loadCoursework();
-
-    //Set contact form submission action
-    document.getElementById("contact-form").action = submitContactForm();
-
-    //Refresh hash
     refreshHash();
 }
 
