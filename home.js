@@ -3,7 +3,7 @@
  * 
  * The scripts in this file are used to dynamically populate the home page
  */
-import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE, COURSEWORK_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
+import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE, COURSEWORK_FILE, EMAIL_URL, loadJSONFromFile, refreshHash } from "/src/constants.js";
 const NUM_SKILLS_TO_SHOW = 9;
 const NUM_EXP_TO_SHOW = 4;
 const NUM_PROJECTS_TO_SHOW = 4;
@@ -14,6 +14,11 @@ window.onload = function () {
     loadExperience();
     loadProjects();
     loadCoursework();
+
+    //Set contact form submission action
+    document.getElementById("contact-form").action = submitContactForm();
+
+    //Refresh hash
     refreshHash();
 }
 
@@ -105,7 +110,7 @@ var loadProjects = function () {
             let projImg = document.createElement("img");
             projImg.setAttribute("class", "project-image");
             projImg.setAttribute("src", proj.image);
-            
+
             projCard.appendChild(projImg);
             projCard.appendChild(projContent);
 
@@ -152,7 +157,7 @@ var loadCoursework = function () {
             let assignmentImg = document.createElement("img");
             assignmentImg.setAttribute("class", "coursework-image");
             assignmentImg.setAttribute("src", assignment.image);
-            
+
             assignmentCard.appendChild(assignmentImg);
             assignmentCard.appendChild(assignmentContent);
 
@@ -167,4 +172,31 @@ var loadCoursework = function () {
             if (index >= NUM_COURSEWORK_TO_SHOW) { break; }
         }
     });
+}
+
+var submitContactForm = async function () {
+    let name = getElementById("contact-name").value ?? "Not Provided";
+    let email = getElementById("contact-email").value ?? "Not Provided";
+    let message = getElementById("contact-msg").value;
+
+    //Check size of message
+    if (!message || message.length < 1 || message.length > 500) {
+        //TODO set feedback
+        return;
+    }
+
+    //Build request body
+    const body = {
+        senderName: name,
+        senderEmail: email,
+        message: message
+    }
+
+    //Send request
+    const res = await fetch(
+        new Request(EMAIL_URL, {
+            method: "POST",
+            body: JSON.stringify(body)
+        })
+    );
 }
