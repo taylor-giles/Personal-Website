@@ -135,7 +135,6 @@
 
 .button.submit {
   font-size: 12pt;
-  margin-top: 15px;
   background-color: var(--complement-dark);
   border: 2px solid var(--secondary-dark);
   color: var(--primary-light);

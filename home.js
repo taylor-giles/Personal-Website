@@ -15,6 +15,9 @@ window.onload = function () {
     loadProjects();
     loadCoursework();
     refreshHash();
+
+    //Attach form submission action to button
+    document.getElementById("contact-submit-button").onclick = submitContactForm;
 }
 
 var loadSkills = function () {
@@ -169,16 +172,25 @@ var loadCoursework = function () {
     });
 }
 
-var submitContactForm = async function () {
-    let name = getElementById("contact-name").value ?? "Not Provided";
-    let email = getElementById("contact-email").value ?? "Not Provided";
-    let message = getElementById("contact-msg").value;
+async function submitContactForm() {
+    let form = document.getElementById("contact-form");
+    let name = document.getElementById("contact-name").value;
+    let email = document.getElementById("contact-email").value;
+    let message = document.getElementById("contact-msg").value;
 
-    //Check size of message
-    if (!message || message.length < 1 || message.length > 500) {
-        //TODO set feedback
+    let feedbackDisplay = document.getElementById("contact-feedback");
+
+    //Check email validity
+    const emailRegexp = new RegExp(/^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i);
+    if (email && !emailRegexp.test(email)) {
+        feedbackDisplay.style.color = "#FF3333";
+        feedbackDisplay.innerHTML = "Email is not valid.";
         return;
     }
+
+    //Feedback for sending message
+    feedbackDisplay.style.color = "#FFFFFF";
+    feedbackDisplay.innerHTML = "Sending message...";
 
     //Build request body
     const body = {
@@ -187,11 +199,22 @@ var submitContactForm = async function () {
         message: message
     }
 
-    //Send request
+    //Send request and get response status & feedback message
     const res = await fetch(
         new Request(EMAIL_URL, {
             method: "POST",
             body: JSON.stringify(body)
         })
     );
+    const status = res.status;
+    const feedback = await res.blob().then((blob) => blob.text());
+
+    //Show updated feedback
+    if (status === 200) {
+        feedbackDisplay.style.color = "#00FF70";
+        form.reset();
+    } else {
+        feedbackDisplay.style.color = "#FF3333";
+    }
+    feedbackDisplay.innerHTML = feedback;
 }

@@ -136,7 +136,11 @@
             <label class="contact-label" for="contact-msg">Message</label>
             <textarea class="contact-input" id="contact-msg" name="contact-msg" required></textarea>
 
-            <button type="submit" onclick="submitContactForm" id="contact-submit-button" class="button submit">Send Message</button>
+            <div id="contact-button-frame">
+              <button type="submit" id="contact-submit-button" class="button submit">Send Message</button>
+              <div id="contact-feedback"></div>
+            </div>
+            
           </form>
         </div>
         <div id="contact-portrait-frame">
