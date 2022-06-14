@@ -126,7 +126,7 @@
             I'm always open to comments or questions about my work, my experience, or anything else! Feel free to send
             me a message, and be sure to leave your email so I can get back to you as soon as possible.
           </div>
-          <form action="mailto:taylor.w.giles@gmail.com" method="post" enctype="multipart/form-data">
+          <form onsubmit="return false;" id="contact-form" method="post" enctype="multipart/form-data">
             <label class="contact-label" for="contact-name">Name</label>
             <input type="text" class="contact-input" id="contact-name" name="contact-name" />
 
@@ -136,7 +136,11 @@
             <label class="contact-label" for="contact-msg">Message</label>
             <textarea class="contact-input" id="contact-msg" name="contact-msg" required></textarea>
 
-            <button type="submit" id="contact-submit-button" class="button submit">Send Message</button>
+            <div id="contact-button-frame">
+              <button type="submit" id="contact-submit-button" class="button submit">Send Message</button>
+              <div id="contact-feedback"></div>
+            </div>
+            
           </form>
         </div>
         <div id="contact-portrait-frame">

@@ -3,6 +3,9 @@ export const EXP_FILE = "/data/experiences.json";
 export const PROJECTS_FILE = "/data/projects.json";
 export const COURSEWORK_FILE = "/data/coursework.json";
 
+//Endpoint for the AWS API for email lambda function
+export const EMAIL_URL = "https://8dqpo6qwv1.execute-api.us-east-1.amazonaws.com";
+
 export const loadJSONFromFile = function(jsonFilePath, callback){
     let xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {

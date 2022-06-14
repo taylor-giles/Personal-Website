@@ -3,7 +3,7 @@
  * 
  * The scripts in this file are used to dynamically populate the home page
  */
-import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE, COURSEWORK_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
+import { SKILLS_FILE, EXP_FILE, PROJECTS_FILE, COURSEWORK_FILE, EMAIL_URL, loadJSONFromFile, refreshHash } from "/src/constants.js";
 const NUM_SKILLS_TO_SHOW = 9;
 const NUM_EXP_TO_SHOW = 4;
 const NUM_PROJECTS_TO_SHOW = 4;
@@ -15,6 +15,9 @@ window.onload = function () {
     loadProjects();
     loadCoursework();
     refreshHash();
+
+    //Attach form submission action to button
+    document.getElementById("contact-submit-button").onclick = submitContactForm;
 }
 
 var loadSkills = function () {
@@ -105,7 +108,7 @@ var loadProjects = function () {
             let projImg = document.createElement("img");
             projImg.setAttribute("class", "project-image");
             projImg.setAttribute("src", proj.image);
-            
+
             projCard.appendChild(projImg);
             projCard.appendChild(projContent);
 
@@ -152,7 +155,7 @@ var loadCoursework = function () {
             let assignmentImg = document.createElement("img");
             assignmentImg.setAttribute("class", "coursework-image");
             assignmentImg.setAttribute("src", assignment.image);
-            
+
             assignmentCard.appendChild(assignmentImg);
             assignmentCard.appendChild(assignmentContent);
 
@@ -167,4 +170,51 @@ var loadCoursework = function () {
             if (index >= NUM_COURSEWORK_TO_SHOW) { break; }
         }
     });
+}
+
+async function submitContactForm() {
+    let form = document.getElementById("contact-form");
+    let name = document.getElementById("contact-name").value;
+    let email = document.getElementById("contact-email").value;
+    let message = document.getElementById("contact-msg").value;
+
+    let feedbackDisplay = document.getElementById("contact-feedback");
+
+    //Check email validity
+    const emailRegexp = new RegExp(/^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i);
+    if (email && !emailRegexp.test(email)) {
+        feedbackDisplay.style.color = "#FF3333";
+        feedbackDisplay.innerHTML = "Email is not valid.";
+        return;
+    }
+
+    //Feedback for sending message
+    feedbackDisplay.style.color = "#FFFFFF";
+    feedbackDisplay.innerHTML = "Sending message...";
+
+    //Build request body
+    const body = {
+        senderName: name,
+        senderEmail: email,
+        message: message
+    }
+
+    //Send request and get response status & feedback message
+    const res = await fetch(
+        new Request(EMAIL_URL, {
+            method: "POST",
+            body: JSON.stringify(body)
+        })
+    );
+    const status = res.status;
+    const feedback = await res.blob().then((blob) => blob.text());
+
+    //Show updated feedback
+    if (status === 200) {
+        feedbackDisplay.style.color = "#00FF70";
+        form.reset();
+    } else {
+        feedbackDisplay.style.color = "#FF3333";
+    }
+    feedbackDisplay.innerHTML = feedback;
 }

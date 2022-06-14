@@ -327,6 +327,20 @@
   height: 150px;
 }
 
+#contact-button-frame {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#contact-feedback {
+  width: "max-content";
+  height: "100%";
+  margin-left: 15px;
+}
+
 #contact-portrait {
   width: 210px;
   height: 260px;
