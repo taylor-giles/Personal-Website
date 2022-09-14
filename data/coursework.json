@@ -48,5 +48,15 @@
             "HTML/CSS"
         ],
         "course": "Fundamentals of Software Development (SBU)"
+    },
+    {
+        "id": "energy",
+        "title": "Cryptocurrency Energy Analysis",
+        "github": "https://github.com/taylor-giles-sbu/CSE551-Final-Project",
+        "description": "An analysis of alternative cryptocurrencies and the impact they have on the environment due to the energy they consume",
+        "skills": [
+            "Python"
+        ],
+        "course": "Introduction to Smart Energy (SBU)"
     }
 ]
