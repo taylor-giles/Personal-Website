@@ -212,7 +212,11 @@
   font-size: 18pt;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 10px;
+  width: 100%;
 }
 
 .project-description {
@@ -233,6 +237,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
+  width: calc(100% - 125px);
 }
 
 /* Coursework */

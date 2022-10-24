@@ -12,7 +12,7 @@
             "AWS",
             "Express",
             "NGIИX",
-            "Cloud Computing",
+            "Cloud",
             "Linux"
         ],
         "course": "Fundamentals of Software Development (SBU)"
@@ -24,8 +24,7 @@
         "description": "A group project for CSE356 at SBU - a collaborative document editor based on Operational Transformations (OT) with emphasis on scaling for performance under load.",
         "image": "/images/cloud.png",
         "skills": [
-            "Cloud Computing",
-            "DevOps",
+            "Cloud",
             "Javascript",
             "MongoDB",
             "ShareDB",

@@ -12,6 +12,26 @@
     ]
   },
   {
+    "id": "worldmusic",
+    "title": "Spotify Worldwide",
+    "github": "https://github.com/ContactShaanKhan/2022-Hackathon",
+    "links": [
+      {
+        "display": "hackathon.shaankhan.me",
+        "url": "https://hackathon.shaankhan.me/login"
+      }
+    ],
+    "description": "A web app that uses the Spotify API to facilitate expanding music tastes, with fun game-like features. Made as a 48-hr Hackathon project.",
+    "image": "/images/globe.png",
+    "skills": [
+      "OAuth",
+      "Cloud",
+      "React",
+      "Javascript",
+      "HTML/CSS"
+    ]
+  },
+  {
     "id": "budget-manager",
     "title": "Budget Manager",
     "github": "https://github.com/taylor-giles/Money-Manager",
@@ -24,7 +44,7 @@
     ]
   },
   {
-    "id": "hackathon",
+    "id": "stonedog",
     "title": "\"Planet Stonedog\"",
     "github": "https://github.com/taylor-giles/SBUHacks-Fall2021",
     "links": [
