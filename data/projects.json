@@ -1,5 +1,29 @@
 [
   {
+    "id": "led",
+    "title": "LED Controller",
+    "github": "https://github.com/taylor-giles/LED-Controller-Web",
+    "links": [
+      {
+        "display": "lights.taylorgiles.me",
+        "url": "https://lights.taylorgiles.me"
+      }
+    ],
+    "description": "A mobile web app, server, and ESP web socket client for controlling addressable LED strips.",
+    "image": "/images/led-controller-icon.png",
+    "skills": [
+      "Cloud",
+      "Svelte",
+      "Typescript",
+      "Javascript",
+      "C/C++",
+      "Arduino",
+      "MongoDB",
+      "NGIИX",
+      "HTML/CSS"
+    ]
+  },
+  {
     "id": "orb",
     "title": "Magic IoT Orbs",
     "github": "https://github.com/taylor-giles/Magic-Orb",
