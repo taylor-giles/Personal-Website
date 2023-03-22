@@ -1,7 +1,7 @@
 [
     {
         "id": "chc",
-        "title": "Coffee House Comics",
+        "title": "Coffeehouse Comics",
         "github": "https://github.com/Coffee-House-Comics",
         "description": "A semester-long group project for CSE416 at SBU - a web-based community platform for creating and sharing comics & interactive stories.",
         "image": "/images/chc-round.png",
@@ -32,6 +32,18 @@
             "Linux"
         ],
         "course": "Cloud Computing (SBU)"
+    },
+    {
+        "id": "covidtracing",
+        "title": "Security Analysis of Contact Tracing Apps",
+        "description": "I was a student researcher on Prof. Joydeep Mitra's 'Security Analysis of Contact Tracing Apps' research project, which seeks to analyze and scrutinize the security of the COVID-19 contact tracing Android apps endorsed by each U.S. state. The project involves decompilation of .apk files and in-depth analysis of the generated code.",
+        "skills": [
+            "Security",
+            "Android",
+            "Research"
+        ],
+        "image": "/images/security.png",
+        "course": "Prof. Joydeep Mitra's Research Apprenticeship (SBU)"
     },
     {
         "id": "t5l",

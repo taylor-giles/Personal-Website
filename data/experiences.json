@@ -34,20 +34,6 @@
         "image": "/images/sbu-campres.png"
     },
     {
-        "id": "research",
-        "title": "Android Security Research",
-        "location": "Stony Brook University",
-        "employer": "Joydeep Mitra",
-        "time": "Jan. 2022 - May 2022",
-        "description": "I was a student researcher on Prof. Joydeep Mitra's 'Security Analysis of Contact Tracing Apps' research project, which seeks to analyze and scrutinize the security of the COVID-19 contact tracing Android apps endorsed by each U.S. state. The project involves decompilation of .apk files and in-depth analysis of the generated code.",
-        "skills": [
-            "Security",
-            "Android",
-            "Research"
-        ],
-        "image": "/images/security.png"
-    },
-    {
         "id": "ta",
         "title": "Teaching Assistant",
         "location": "Stony Brook University",
