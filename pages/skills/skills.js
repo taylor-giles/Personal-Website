@@ -3,7 +3,7 @@
  * 
  * The scripts in this file are used to dynamically populate the skills page
  */
- import { PROJECTS_FILE, EXP_FILE, COURSEWORK_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
+ import { PROJECTS_FILE, EXP_FILE, loadJSONFromFile, refreshHash } from "/src/constants.js";
 
  window.onload = function() {
     loadSkills();
@@ -13,7 +13,6 @@
 var loadSkills = function() {
     let projects = [];
     let experiences = [];
-    let coursework = [];
     let skills = new Set();
 
     let buildContent = () => {
@@ -114,37 +113,6 @@ var loadSkills = function() {
                 }
             }
 
-            //Coursework
-            for(let assignment of coursework){
-                if(assignment.skills.includes(skill)){
-                    //Coursework item
-                    let assignmentItem = document.createElement("div");
-                    assignmentItem.setAttribute("class", "card skill-list-item skill-coursework-item");
-
-                    //Coursework content
-                    let assignmentContent = document.createElement("div");
-
-                    //Title
-                    let assignmentTitle = document.createElement("div");
-                    assignmentTitle.setAttribute("class", "skill-content-title");
-                    assignmentTitle.innerHTML = assignment.title;
-                    assignmentContent.appendChild(assignmentTitle);
-
-                    //Description
-                    let assignmentDescription = document.createElement("div");
-                    assignmentDescription.innerHTML = assignment.description;
-                    assignmentContent.appendChild(assignmentDescription);
-
-                    assignmentItem.appendChild(assignmentContent);
-
-                    //Redirect on click
-                    assignmentItem.onclick = () => {
-                        location.href = "/pages/coursework/#" + assignment.id;
-                    };
-                    skillContent.appendChild(assignmentItem);
-                }
-            }
-
             skillSection.appendChild(skillContent);
             skillsContainer.appendChild(skillSection);
         }
@@ -159,12 +127,6 @@ var loadSkills = function() {
         }
         for(let exp of experiences){
             for(let skill of exp.skills){
-                skills.add(skill);
-            }
-        }
-        for(let assignment of coursework){
-
-            for(let skill of assignment.skills){
                 skills.add(skill);
             }
         }
@@ -194,16 +156,6 @@ var loadSkills = function() {
             getExperiences();
         });
     };
-
-    let getCoursework = () => {
-        //Get coursework
-        loadJSONFromFile(COURSEWORK_FILE, (assignments) => {
-            for(let assignment of assignments){
-                coursework.push(assignment);
-            }
-            getProjects();
-        });
-    }
-
-    getCoursework();
+    
+    getProjects();
 }
