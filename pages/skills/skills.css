@@ -63,7 +63,7 @@
     margin-right: 20px;
   }
   .skill-proj-item::before{
-    content: url("/images/icons/science.svg");
+    content: url("/images/icons/gears.svg");
     margin-right: 20px;
   }
   .skill-coursework-item::before{

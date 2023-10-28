@@ -88,7 +88,7 @@ var loadSkills = function() {
                 if(proj.skills.includes(skill)){
                     //Project item
                     let projItem = document.createElement("div");
-                    projItem.setAttribute("class", "card skill-list-item skill-proj-item");
+                    projItem.setAttribute("class", `card skill-list-item skill-${proj.course ? "coursework" : "proj"}-item`);
 
                     //Project content
                     let projContent = document.createElement("div");
@@ -101,7 +101,6 @@ var loadSkills = function() {
 
                     //Description
                     let projDescription = document.createElement("div");
-                    projDescription.setAttribute("class", "skill-proj-description");
                     projDescription.innerHTML = proj.description;
                     projContent.appendChild(projDescription);
 
@@ -133,7 +132,6 @@ var loadSkills = function() {
 
                     //Description
                     let assignmentDescription = document.createElement("div");
-                    assignmentDescription.setAttribute("class", "skill-coursework-description");
                     assignmentDescription.innerHTML = assignment.description;
                     assignmentContent.appendChild(assignmentDescription);
 

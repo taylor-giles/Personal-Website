@@ -62,6 +62,14 @@ var loadProjects = function () {
 
             projContent.appendChild(projTitle);
 
+            //Course
+            if (proj.course) {
+                let projCourse = document.createElement("div");
+                projCourse.setAttribute("class", "proj-attribute proj-course");
+                projCourse.innerHTML = proj.course;
+                projContent.appendChild(projCourse);
+            }
+
             //Links
             if (proj.links) {
                 //Links container
@@ -77,14 +85,6 @@ var loadProjects = function () {
                     linksContainer.appendChild(projLink);
                 }
                 projContent.appendChild(linksContainer);
-            }
-
-            //Course
-            if (proj.course) {
-                let projCourse = document.createElement("div");
-                projCourse.setAttribute("class", "proj-attribute proj-course");
-                projCourse.innerHTML = proj.course;
-                projContent.appendChild(projCourse);
             }
 
             //Description

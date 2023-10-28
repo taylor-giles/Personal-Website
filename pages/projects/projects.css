@@ -53,6 +53,17 @@
     vertical-align: -35%;
     content: url('/images/icons/link.svg');
   }
+  .proj-course{
+    font-size: 12pt;
+    color: var(--primary-dark);
+  }
+  .proj-course::before {
+    display: inline-flex;
+    margin-right: 5px;
+    vertical-align: -35%;
+    content: url('/images/icons/school.svg')
+
+  }
   .proj-description {
     font-size: 14pt;
     margin-top: 15px;
