@@ -1,7 +1,7 @@
 [
     {
         "id": "crit",
-        "title": "Full-Stack Team Manager",
+        "title": "Project Manager",
         "location": "Stony Brook University",
         "employer": "Campus Residences IT",
         "time": "Mar. 2022 - Present",
@@ -14,7 +14,8 @@
             "React",
             "Javascript",
             "Vue",
-            "Cloud"
+            "Cloud",
+            "Legacy Codebase"
         ],
         "image": "/images/sbu-campres.png"
     },
@@ -27,9 +28,7 @@
         "description": "I directed a team of 10-20 student technicians whose goal is to ensure that all printing/technology stations located around the campus are working smoothly and efficiently. This \"Print Team\" is a subset of the larger Campus Residences IT group - I coordinate the efforts of the Print Team with all other groups within C.R.I.T. to maximize effectiveness and efficiency.",
         "skills": [
             "Leadership",
-            "Organization",
-            "Customer Service",
-            "Problem Solving"
+            "Customer Service"
         ],
         "image": "/images/sbu-campres.png"
     },
@@ -62,24 +61,8 @@
         "skills": [
             "Legacy Codebase",
             "Javascript",
-            "HTML/CSS",
-            "Organization",
-            "Problem Solving"
+            "HTML/CSS"
         ],
         "image": "/images/launchpad-logo.png"
-    },
-    {
-        "id": "tutor",
-        "title": "Private Tutor",
-        "location": "Long Island",
-        "employer": "High School & College Students",
-        "time": "May 2016 ~ Dec. 2020",
-        "description": "For several years, I tutored students in grades ranging from 2-12 as well as college students. Most frequently I helped with mathematics (algebra, geometry, etc.) though I have also assisted with computer science, physical sciences, and developing skills necessary for essay writing and test taking.",
-        "skills": [
-            "Teaching",
-            "Problem Solving",
-            "Organization"
-        ],
-        "image":"/images/tutor.png"
     }
 ]
