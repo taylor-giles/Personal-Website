@@ -47,7 +47,7 @@
   {
     "id": "smarthome",
     "title": "Distributed Smarthome",
-    "description": "A smart device hub system that prioritizes distributability, customizability, and resilience.",
+    "description": "Mentored Master's project to design a distributed IoT smarthome hub ecosystem that delivers a highly performant and customizable experience. A modular system using Node microservice components that communicate over a modified MQTT protocol to coordinate behavior across any number of action nodes.",
     "skills": [
       "Cloud",
       "Typescript",
