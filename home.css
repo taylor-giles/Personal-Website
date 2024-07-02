@@ -78,10 +78,12 @@
 }
 
 #about-portrait {
-  width: 200px;
-  height: 250px;
+  width: 50%;
+  object-fit: contain;
   margin-left: 50px;
-  background-color: var(--accent);
+  padding: 2px;
+  background-color: var(--secondary-light);
+  border-radius: 2px;
 }
 
 #about-button {
@@ -297,7 +299,8 @@
 
 #contact-portrait {
   width: 210px;
-  height: 260px;
+  height: 250px;
+  object-fit: cover;
 }
 
 #contact-portrait-frame {
@@ -313,7 +316,7 @@
 
 #contact-portrait-caption {
   margin: auto;
-  margin-top: 6px;
+  margin-top: 10px;
   font-size: 11pt;
   color: var(--primary-light)
 }

@@ -23,6 +23,8 @@
     var(--complement-dark), var(--complement-light),var(--complement-dark),
     var(--primary-dark));
 
+    --image-gradient: radial-gradient(var(--complement-light), var(--complement-dark),var(--complement-light));
+
     /* Sizing Values */
     --max-width: 1250px;
 }
