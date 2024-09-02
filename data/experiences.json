@@ -1,5 +1,22 @@
 [
     {
+        "id": "vestmark",
+        "title": "Software Engineer",
+        "employer": "Vestmark, Inc.",
+        "time": "Jul. 2024 - Present",
+        "description": "I am an Associate Software Engineer on the Integrations team at Vestmark. My team is responsible for ensuring that clients have a smooth, seamless, custom experience on the VestmarkONE platform. I am responsible for quickly responding to bugs, meeting client requests, coordinating data flow, and adding new features to the robust VestmarkONE application.",
+        "skills": [
+            "Java",
+            "SQL",
+            "Cloud",
+            "AWS",
+            "Docker",
+            "Agile",
+            "Legacy Codebase"
+        ],
+        "image": "/images/vestmark.png"
+    },
+    {
         "id": "crit",
         "title": "Project Manager",
         "location": "Stony Brook University",
@@ -15,6 +32,7 @@
             "Javascript",
             "Vue",
             "Cloud",
+            "Docker",
             "Legacy Codebase"
         ],
         "image": "/images/sbu-campres.png"
