@@ -51,20 +51,6 @@
         "image": "/images/sbu-campres.png"
     },
     {
-        "id": "ta",
-        "title": "Teaching Assistant",
-        "location": "Stony Brook University",
-        "employer": "Systems Fundamentals",
-        "time": "Aug. 2021 - Dec. 2021",
-        "description": "As a TA, I assisted students in SBU's \"Systems Fundamentals I\" course, which teaches MIPS assembly, Boolean algebra, and the basics of CPU engineering. I held one-on-one office hours (3 hrs/week) to answer student questions, and assisted the professor by creating and proctoring various quizzes and exams.",
-        "skills": [
-            "Teaching",
-            "Assembly",
-            "Organization"
-        ],
-        "image": "/images/sbu-logo.png"
-    },
-    {
         "id": "launchpad",
         "title": "Contracted Developer",
         "links":[
