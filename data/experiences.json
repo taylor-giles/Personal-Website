@@ -3,6 +3,7 @@
         "id": "vestmark",
         "title": "Software Engineer",
         "employer": "Vestmark, Inc.",
+        "employerLink": "https://www.vestmark.com/",
         "time": "Jul. 2024 - Present",
         "description": "I am an Associate Software Engineer on the Integrations team at Vestmark. My team is responsible for ensuring that clients have a smooth, seamless, custom experience on the VestmarkONE platform. I am responsible for quickly responding to bugs, meeting client requests, coordinating data flow, and adding new features to the robust VestmarkONE application.",
         "skills": [
@@ -14,7 +15,8 @@
             "Agile",
             "Legacy Codebase"
         ],
-        "image": "/images/vestmark.png"
+        "image": "/images/vestmark.png",
+        "links":[]
     },
     {
         "id": "crit",
@@ -35,7 +37,8 @@
             "Docker",
             "Legacy Codebase"
         ],
-        "image": "/images/sbu-campres.png"
+        "image": "/images/sbu-campres.png",
+        "links":[]
     },
     {
         "id": "crit-pt",
@@ -48,18 +51,14 @@
             "Leadership",
             "Customer Service"
         ],
-        "image": "/images/sbu-campres.png"
+        "image": "/images/sbu-campres.png",
+        "links":[]
     },
     {
         "id": "launchpad",
         "title": "Contracted Developer",
-        "links":[
-            {
-                "display": "LaunchPad",
-                "url": "https://launchpadduo.com/"
-            }
-        ],
         "employer": "LaunchPad",
+        "employerLink": "https://launchpadduo.com/",
         "time": "Sep. 2020 - Jan. 2021",
         "description": "I was contracted by LaunchPad, an advertizing analytics startup company, to completely overhaul their product's web app. I was able to analyze their existing codebase and remove a considerable number of redundancies, while implementing a more modular and feature-rich API.",
         "skills": [
@@ -67,6 +66,7 @@
             "Javascript",
             "HTML/CSS"
         ],
-        "image": "/images/launchpad-logo.png"
+        "image": "/images/launchpad-logo.png",
+        "links":[]
     }
 ]

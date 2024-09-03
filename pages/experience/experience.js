@@ -65,7 +65,12 @@ var loadExperience = function() {
             expContent.appendChild(expTitle);
 
             //Employer
-            let expEmployer = document.createElement("div");
+            let expEmployer = document.createElement(exp.employerLink ? "a" : "div");
+            if(exp.employerLink){
+                expEmployer.setAttribute("href", exp.employerLink);
+                expEmployer.setAttribute("rel", "noopener noreferrer");
+                expEmployer.setAttribute("target", "_blank");
+            }
             expEmployer.setAttribute("class", "exp-attribute exp-employer");
             expEmployer.innerHTML = exp.employer;
             expContent.appendChild(expEmployer);
@@ -79,7 +84,8 @@ var loadExperience = function() {
             }
 
             //Links
-            if(exp.links){
+            //Each link should have "display" and "url"
+            if(exp.links && exp.links.length > 0){
                 //Links container
                 let linksContainer = document.createElement("div");
                 linksContainer.setAttribute("class", "exp-links-container");

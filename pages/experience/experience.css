@@ -57,6 +57,9 @@
   .exp-time{
     font-size: 14pt;
   }
+  .exp-employer{
+    color: var(--primary-dark);
+  }
   .exp-employer::before{
     content: url('/images/icons/work.svg');
   }
