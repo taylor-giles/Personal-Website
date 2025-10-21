@@ -1,24 +1,23 @@
 [
   {
-    "id": "led",
-    "title": "LED Controller",
-    "github": "https://github.com/taylor-giles/LED-Controller-Web",
+    "id": "memolink",
+    "title": "MemoLink",
     "links": [
       {
-        "display": "lights.taylorgiles.me",
-        "url": "https://lights.taylorgiles.me"
+        "display": "memolink.taylorgiles.me",
+        "url": "https://memolink.taylorgiles.me"
       }
     ],
-    "description": "A mobile web app, server, and ESP web socket client for controlling addressable LED strips.",
-    "image": "/images/led-controller-icon.png",
+    "description": "A personal \"status tag\" - express yourself with pictures and GIFs on a cute, mini screen, at work or at home. Link with friends to send messages and share the fun!",
+    "image": "/images/memolinks.png",
     "skills": [
+      "C/C++",
       "Cloud",
       "Svelte",
       "Typescript",
-      "Javascript",
-      "C/C++",
       "Arduino",
-      "MongoDB",
+      "SQL",
+      "Express",
       "NGIИX"
     ]
   },
@@ -61,6 +60,29 @@
     ],
     "image": "/images/smarthome.jpg",
     "course": "Master's Project (SBU)"
+  },
+  {
+    "id": "led",
+    "title": "LED Controller",
+    "github": "https://github.com/taylor-giles/LED-Controller-Web",
+    "links": [
+      {
+        "display": "lights.taylorgiles.me",
+        "url": "https://lights.taylorgiles.me"
+      }
+    ],
+    "description": "A mobile web app, server, and ESP web socket client for controlling addressable LED strips.",
+    "image": "/images/led-controller-icon.png",
+    "skills": [
+      "C/C++",
+      "Cloud",
+      "Svelte",
+      "Typescript",
+      "Javascript",
+      "Arduino",
+      "MongoDB",
+      "NGIИX"
+    ]
   },
   {
     "id": "orb",
