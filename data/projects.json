@@ -97,18 +97,6 @@
     ]
   },
   {
-    "id": "budget-manager",
-    "title": "Budget Manager",
-    "github": "https://github.com/taylor-giles/Money-Manager",
-    "description": "An Android app to help manage personal spending money by splitting into budgets and monitoring trends.",
-    "image": "/images/money-manager.png",
-    "skills": [
-      "Android",
-      "Kotlin",
-      "Java"
-    ]
-  },
-  {
     "id": "worldmusic",
     "title": "Spotify Worldwide",
     "github": "https://github.com/ContactShaanKhan/2022-Hackathon",
@@ -125,6 +113,18 @@
       "Cloud",
       "React",
       "Javascript"
+    ]
+  },
+  {
+    "id": "budget-manager",
+    "title": "Budget Manager",
+    "github": "https://github.com/taylor-giles/Money-Manager",
+    "description": "An Android app to help manage personal spending money by splitting into budgets and monitoring trends.",
+    "image": "/images/money-manager.png",
+    "skills": [
+      "Android",
+      "Kotlin",
+      "Java"
     ]
   },
   {
@@ -152,23 +152,6 @@
     "skills": [
       "Arduino",
       "C/C++"
-    ]
-  },
-  {
-    "id": "website",
-    "title": "Personal Website",
-    "github": "https://github.com/taylor-giles/Personal-Website",
-    "links": [
-      {
-        "display": "taylorgiles.me",
-        "url": "https://taylorgiles.me"
-      }
-    ],
-    "description": "A website to showcase my work and help people get to know me a little better.",
-    "image": "/images/website-logo.png",
-    "skills": [
-      "Javascript",
-      "AWS"
     ]
   },
   {
@@ -204,20 +187,6 @@
       "NGIИX",
       "Cloud",
       "Linux"
-    ],
-    "course": "Fundamentals of Software Development (SBU)"
-  },
-  {
-    "id": "t5l",
-    "title": "Top 5 Lister",
-    "github": "https://github.com/taylor-giles-sbu/Top5Lister",
-    "description": "A final project (individual) for CSE316 at SBU - a MERN web app which allows users to create, share, and view lists of their top 5 favorite items in any category they choose.",
-    "image": "/images/t5l-logo.png",
-    "skills": [
-      "React",
-      "Express",
-      "Javascript",
-      "MongoDB"
     ],
     "course": "Fundamentals of Software Development (SBU)"
   },

@@ -1,11 +1,11 @@
 [
-    {"name": "Javascript"},
-    {"name": "Android"},
+    {"name": "Typescript"},
     {"name": "Java"},
-    {"name": "Kotlin"},
-    {"name": "Python"},
+    {"name": "Android"},
     {"name": "C/C++"},
-    {"name": "Cloud"},
-    {"name": "C# / .NET"},
-    {"name": "React"}
+    {"name": "Python"},
+    {"name": "Kotlin"},
+    {"name": "SQL"},
+    {"name": "React"},
+    {"name": "C# / .NET"}
 ]
